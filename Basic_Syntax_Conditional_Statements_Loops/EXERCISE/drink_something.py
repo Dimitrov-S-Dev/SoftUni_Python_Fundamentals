@@ -1,11 +1,11 @@
 age = int(input())
-drink = ""
+drink_type = ""
 if age <= 14:
-	drink = "toddy"
+	drink_type = "toddy"
 elif age <= 18:
-	drink = "coke"
+	drink_type = "coke"
 elif age <= 21:
-	drink = "beer"
+	drink_type = "beer"
 else:
-	drink = "whisky"
-print(f"drink {drink}")
+	drink_type = "whisky"
+print(f"drink {drink_type}")
