@@ -8,4 +8,3 @@ for _ in range(count_iter):
 		break
 if is_even:
 	print("All numbers are even")
-
