@@ -18,4 +18,3 @@ for index in range(len(first_word)):
 # 		word = first_word[0:i] + replacement + second_word[i +1:]
 # 		first_word = word
 # 		print(word)
-#
