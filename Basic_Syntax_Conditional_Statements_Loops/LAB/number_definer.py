@@ -10,7 +10,7 @@ elif number > 0:
 	else:
 		print("positive")
 else:
-	if abs(number) > 1000000:
+	if abs(number) > 1_000_000:
 		print("large negative")
 	elif abs(number) < 1:
 		print("small negative")
