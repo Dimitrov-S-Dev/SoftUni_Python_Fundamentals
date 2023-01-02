@@ -1,5 +1,5 @@
-# string = list(map(int, input().split()))
-# print([-el for el in string])
+# numbers = list(map(int, input().split()))
+# print([-el for el in numbers])
 
 string = input().split()
 
