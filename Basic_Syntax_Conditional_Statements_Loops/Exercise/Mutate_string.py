@@ -10,7 +10,6 @@ for index in range(len(first_word)):
         continue
     print(current_word)
     final_word = current_word
-
 # ------------>       alternative option      <------------------
 # for i in range(len(first_word)):
 # 	if first_word[i] != second_word[i]

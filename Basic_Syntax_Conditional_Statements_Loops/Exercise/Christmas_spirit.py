@@ -6,6 +6,7 @@ garland_price, garland_points = 3, 10
 lights_price, lights_points = 15, 17
 points = 0
 money = 0
+
 for day in range(1, days_to_christmas + 1):
 	if day % 11 == 0:
 		decoration_quantity += 2

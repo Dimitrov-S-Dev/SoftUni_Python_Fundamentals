@@ -1,5 +1,6 @@
 name = input()
 is_break = False
+
 while name != "Welcome!":
 	if name == "Voldemort":
 		print("You must not speak of that name!")

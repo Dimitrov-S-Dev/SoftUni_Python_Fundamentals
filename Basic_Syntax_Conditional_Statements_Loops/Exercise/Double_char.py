@@ -1,5 +1,4 @@
 command = input()
-
 while command != "End":
 	result = ""
 	for char in command:

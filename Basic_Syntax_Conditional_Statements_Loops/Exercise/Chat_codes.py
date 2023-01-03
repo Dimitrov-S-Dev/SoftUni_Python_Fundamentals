@@ -1,5 +1,6 @@
 count_iter = int(input())
 
+
 for messages in range(count_iter):
 	message = int(input())
 	if message == 88:

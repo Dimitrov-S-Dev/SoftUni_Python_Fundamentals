@@ -1,5 +1,6 @@
 command = input()
 coffee_count = 0
+
 while command.lower() != "end":
 	if "coding" in command.lower() or "dog" in command.lower() or "cat" in command.lower() \
 		or "movie" in command.lower():

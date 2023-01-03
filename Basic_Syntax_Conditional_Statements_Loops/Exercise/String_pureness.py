@@ -6,5 +6,3 @@ for word in range(count_iter):
 		print(f"{current_word} is not pure!")
 	else:
 		print(f"{current_word} is pure")
-
-

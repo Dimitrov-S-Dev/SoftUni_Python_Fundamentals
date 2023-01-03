@@ -1,5 +1,6 @@
 age = int(input())
 drink_type = ""
+
 if age <= 14:
 	drink_type = "toddy"
 elif age <= 18:
