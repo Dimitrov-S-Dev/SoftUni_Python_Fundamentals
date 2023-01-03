@@ -12,5 +12,4 @@ while len(people) > 0:
         index += 1
     if index >= len(people):
         index = 0
-
 print(result)

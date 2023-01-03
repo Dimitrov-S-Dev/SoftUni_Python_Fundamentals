@@ -11,5 +11,3 @@ for num in numbers:
     message.append(text[index_sum])
     text = text.replace(text[index_sum], '', 1)
 print(message)
-
-

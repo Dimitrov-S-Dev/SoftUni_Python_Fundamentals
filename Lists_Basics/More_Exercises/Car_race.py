@@ -13,6 +13,6 @@ left = time[:middle]
 right = time[middle:]
 
 if sum_lst(left) < sum_lst(right):
-    print(f"The winner is the left with total time: {sum_lst(left):.1f}")
+    print(f"The winner is the left with total time:{sum_lst(left):.1f}")
 else:
-    print(f"The winner is the right with total time: {sum_lst(right):.1f}")
+    print(f"The winner is the right with total time:{sum_lst(right):.1f}")
