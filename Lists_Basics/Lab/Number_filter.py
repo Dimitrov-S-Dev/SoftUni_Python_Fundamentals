@@ -3,7 +3,6 @@ COMMAND_EVEN = 'even'
 COMMAND_ODD = 'odd'
 COMMAND_POSITIVE = 'positive'
 COMMAND_NEGATIVE = 'negative'
-
 numbers = []
 
 for _ in range(count_iter):
@@ -11,9 +10,7 @@ for _ in range(count_iter):
     numbers.append(current_number)
 
 command = input()
-
 filtered_numbers = []
-
 for num in numbers:
     filtered_pass = (
         (command == COMMAND_EVEN and num % 2 == 0) or
@@ -25,5 +22,3 @@ for num in numbers:
         filtered_numbers.append(num)
 
 print(filtered_numbers)
-
-

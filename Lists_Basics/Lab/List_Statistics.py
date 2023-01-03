@@ -11,5 +11,5 @@ for _ in range(count_iter):
 
 print(positive)
 print(negative)
-print(f"Count of positive: {len(positive)}")
+print(f"Count of positives: {len(positive)}")
 print(f"Count of negatives: {sum(negative)}")
