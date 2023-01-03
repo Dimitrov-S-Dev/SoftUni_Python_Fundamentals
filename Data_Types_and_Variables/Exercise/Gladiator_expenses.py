@@ -5,6 +5,7 @@ shield_price = float(input())
 armor_price = float(input())
 expenses = 0
 shield_breaks = 0
+
 for fight in range(1, lost_fights_count + 1):
     if fight % 2 == 0:
         expenses += helmet_price

@@ -4,7 +4,7 @@ max_time = 0
 max_value = 0
 max_quantity = 0
 
-for ball in range(snowballs_count):
+for balls in range(snowballs_count):
     ball_weight = int(input())
     ball_time = int(input())
     ball_quality = int(input())

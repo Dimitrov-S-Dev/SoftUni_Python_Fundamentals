@@ -1,6 +1,6 @@
 count_iter = int(input())
 
-for i in range(count_iter):
-    for j in range(count_iter):
-        for k in range(count_iter):
-            print(f"{chr(97 + i)}{chr(97 + j)}{chr(97 + k)}")
+for a in range(count_iter):
+    for b in range(count_iter):
+        for c in range(count_iter):
+            print(f"{chr(97 + a)}{chr(97 + b)}{chr(97 + c)}")

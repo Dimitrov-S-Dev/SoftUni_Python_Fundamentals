@@ -16,5 +16,5 @@ for day in range(1, days + 1):
     coins += 50
     coins -= group_size * 2
 
-avg_coin = coins // group_size
-print(f"{group_size} companions received {avg_coin} coins each.")
+avg_coins = coins // group_size
+print(f"{group_size} companions received {avg_coins} coins each.")

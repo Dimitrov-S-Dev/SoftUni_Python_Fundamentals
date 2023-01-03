@@ -10,4 +10,3 @@ for _ in range(count_iter):
     capacity += letters
 
 print(capacity)
-
