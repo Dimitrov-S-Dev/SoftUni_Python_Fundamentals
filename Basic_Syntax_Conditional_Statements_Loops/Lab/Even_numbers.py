@@ -1,5 +1,6 @@
 count_iter = int(input())
 is_even = True
+
 for _ in range(count_iter):
 	number = int(input())
 	if number % 2 != 0:

@@ -1,6 +1,7 @@
 budget = int(input())
 is_all_bought = True
 command = input()
+
 while command != "End":
 	price = int(command)
 	if budget >= price:
