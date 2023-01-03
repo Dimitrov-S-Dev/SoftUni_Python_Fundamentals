@@ -4,7 +4,6 @@
 #         result.append(abs(num))
 #     return result
 #
-#
 # numbers = list(map(float,input().split()))
 # print(abs_num(numbers))
 

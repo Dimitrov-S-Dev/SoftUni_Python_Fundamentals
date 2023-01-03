@@ -12,8 +12,7 @@ def get_calculates(par,num1,num2):
 operator = input()
 first_num = int(input())
 second_num = int(input())
-print(get_calculates(operator,first_num,second_num))
-
+print(get_calculates(operator, first_num, second_num))
 
 
 

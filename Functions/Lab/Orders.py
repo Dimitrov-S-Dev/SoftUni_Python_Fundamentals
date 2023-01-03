@@ -8,7 +8,6 @@ def get_total(item, qty):
     elif item == 'snack':
         return qty * 2.0
 
-
 product = input()
 quantity = int(input())
 print(get_total(product, quantity))
