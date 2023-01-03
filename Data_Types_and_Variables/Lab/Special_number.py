@@ -8,4 +8,3 @@ for number in range(1, count_iter + 1):
         print(f"{number} -> True")
     else:
         print(f"{number} -> False")
-
