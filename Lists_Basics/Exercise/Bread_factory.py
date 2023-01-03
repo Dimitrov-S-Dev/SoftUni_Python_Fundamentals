@@ -2,6 +2,7 @@ events = input().split('|')
 energy = 100
 coins = 100
 is_bakery_closed = False
+
 for event in events:
     info = event.split('-')
     order = info[0]
@@ -35,7 +36,3 @@ if not is_bakery_closed:
     print('Day completed!')
     print(f"Coins: {coins}")
     print(f"Energy: {energy}")
-
-
-
-

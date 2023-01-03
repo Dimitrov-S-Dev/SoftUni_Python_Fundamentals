@@ -19,6 +19,7 @@
 # if is_terminated:
 #     print("Game was terminated")
 
+
 team_a = ['A-' + str(s) for s in range(1, 12)]
 team_b = ['B-' + str(s) for s in range(1, 12)]
 red_cards = input().split()

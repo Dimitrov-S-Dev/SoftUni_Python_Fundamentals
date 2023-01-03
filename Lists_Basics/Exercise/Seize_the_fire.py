@@ -34,6 +34,3 @@ for level in level_of_fire:
 
 print(f"Effort: {effort:.2f}")
 print(f"Total Fire: {total_fire}")
-
-
-

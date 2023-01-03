@@ -1,6 +1,5 @@
 factor = int(input())
 count = int(input())
-
 result = []
 
 for number in range(1, count + 1):

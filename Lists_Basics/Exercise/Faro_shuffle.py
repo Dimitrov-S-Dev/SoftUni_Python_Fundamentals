@@ -12,4 +12,3 @@ for shuffle in range(shuffles):
     cards = result
 
 print(result)
-

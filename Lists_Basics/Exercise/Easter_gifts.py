@@ -7,8 +7,8 @@ while command != 'No Money':
     gift_name = info[1]
     if action == 'OutOfStock':
         if gift_name in easter_gifts:
-            for index, el in enumerate(easter_gifts):
-                if el == gift_name:
+            for index, elem in enumerate(easter_gifts):
+                if elem == gift_name:
                     easter_gifts[index] = 'None'
     elif action == 'JustInCase':
         easter_gifts[-1] = gift_name

@@ -35,5 +35,3 @@ if sum_of_all + budget > 150:
     print('Hello, France')
 else:
     print('Not enough money.')
-
-
