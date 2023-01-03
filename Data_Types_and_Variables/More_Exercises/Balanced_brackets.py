@@ -1,6 +1,7 @@
 number_of_lines = int(input())
 is_balanced = True
 is_open = False
+
 for _ in range(number_of_lines):
     char = input()
     if char == "(":
@@ -18,4 +19,3 @@ if is_balanced:
     print("BALANCED")
 else:
     print("UNBALANCED")
-
