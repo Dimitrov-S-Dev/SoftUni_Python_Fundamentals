@@ -7,8 +7,8 @@ def subtract(d, c):
 
 
 def add_and_subtract(a, b, c):
-    sum_first_second = sum_numbers(a, b)
-    result = subtract(sum_first_second, c)
+    sum_first_and_second = sum_numbers(a, b)
+    result = subtract(sum_first_and_second, c)
     return result
 
 
