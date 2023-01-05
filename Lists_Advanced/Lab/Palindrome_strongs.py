@@ -1,8 +1,8 @@
 words = input().split()
-palindrome = input()
+searched_word = input()
 
 palindromes = [x for x in words if x == x[:: -1]]
-count = palindromes.count(palindrome)
+count = palindromes.count(searched_word)
 
 print(palindromes)
 print(f"Found palindrome {count} times")
