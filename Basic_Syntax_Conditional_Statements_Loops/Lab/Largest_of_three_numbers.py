@@ -1,3 +1,8 @@
+"""
+Write a program that receives three whole numbers
+and prints the largest one.
+"""
+
 first_num = int(input())
 second_num = int(input())
 third_num = int(input())
