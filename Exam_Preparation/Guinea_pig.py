@@ -41,6 +41,7 @@ hay_qty = float(input()) * 1000
 cover_qty = float(input()) * 1000
 pig_weight = float(input()) * 1000
 
+
 for day in range(1, 31):
     food_qty = get_food(food_qty)
     if day % 2 == 0:
