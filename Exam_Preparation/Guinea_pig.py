@@ -55,4 +55,3 @@ if food_qty > 0 and hay_qty > 0 and cover_qty > 0:
     print(f"Everything is fine! Puppy is happy! Food: {food_qty:.2f}, Hay: {hay_qty:.2f}, Cover: {cover_qty:.2f}.")
 else:
     print(f"Merry must go to the pet store!")
-
