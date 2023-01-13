@@ -50,4 +50,3 @@ def get_shoot(lst):
 
 shots = list(map(int, input().split()))
 get_shoot(shots)
-
