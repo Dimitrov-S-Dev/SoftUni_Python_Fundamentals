@@ -16,4 +16,4 @@ for _ in range(count_iter):
 		print(f"{number} is odd!")
 		break
 if is_even:
-	print("All numbers are even")
+	print("All numbers are even.")
