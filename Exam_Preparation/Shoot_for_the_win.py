@@ -23,6 +23,7 @@ in the following format:
 
 def get_count(lst, ind):
     target_value = lst[ind]
+    lst[ind] = -1
     for index, target in enumerate(lst):
         if target > target_value:
             lst[index] -= target_value
@@ -30,7 +31,6 @@ def get_count(lst, ind):
             continue
         else:
             lst[index] += target_value
-    lst[ind] = -1
     return lst
 
 
@@ -39,14 +39,15 @@ def get_shoot(lst):
     while True:
         command = input()
         if command == "End":
-            message = f"Shot targets {shot_target} ->"
-            print(message, *lst, sep=" ")
             break
         target = int(command)
-        if target in range(len(lst)):
+        if 0 <= target < len(lst) and lst[target] != -1:
             shot_target += 1
             lst = get_count(lst, target)
 
+    result = [str(num) for num in lst]
+    return f"Shot targets {shot_target} -> {' '.join(result)}"
+
 
 shots = list(map(int, input().split()))
-get_shoot(shots)
+print(get_shoot(shots))

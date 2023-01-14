@@ -56,12 +56,11 @@ def get_renew(lst, item):
 
 def get_inventory(lst):
     while True:
-        command = input().split(" - ")
-        action = command[0]
-        if action == "Craft!":
+        command = input()
+        if command == "Craft!":
             print(", ".join(lst))
             break
-        item = command[1]
+        action, item = command.split(" - ")
         if action == "Collect":
             lst = get_collect(lst, item)
         elif action == "Drop":
