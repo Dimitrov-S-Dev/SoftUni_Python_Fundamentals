@@ -38,7 +38,7 @@ def get_shoot(lst, index, value):
 
 def get_add(lst, index, value):
     if 0 <= index < len(lst):
-        lst[index] += value
+        lst.insert(index, value)
     else:
         print(f"Invalid placement!")
     return lst
