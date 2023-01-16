@@ -18,7 +18,7 @@ class Circle:
 
     def __init__(self, diameter):
         self.diameter = diameter
-        self.radius = diameter / 2
+        self.radius = self.diameter / 2
 
     def calculate_circumference(self):
         return Circle.__pi * self.diameter
