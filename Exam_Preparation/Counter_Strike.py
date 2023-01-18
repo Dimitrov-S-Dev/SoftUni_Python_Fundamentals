@@ -16,6 +16,7 @@ print the count of won battles in the following format:
 "Won battles: {count}. Energy left: {energy}"
 """
 
+
 def get_enemy(energy, distance):
     energy -= distance
     return energy
