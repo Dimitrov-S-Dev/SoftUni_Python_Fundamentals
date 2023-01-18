@@ -19,8 +19,8 @@ def get_result(lst):
 
 numbers = list(map(int, input().split()))
 average = sum(numbers) / len(numbers)
-new_lst = [el for el in sorted(numbers, reverse=True) if el > average]
+greater_then_average = [el for el in sorted(numbers, reverse=True) if el > average]
 if average == 1:
     print("No")
 else:
-    print(get_result(new_lst))
+    print(get_result(greater_then_average))
