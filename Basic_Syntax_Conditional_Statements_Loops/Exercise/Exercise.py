@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 Jenny's Secret Message
 
 name = input()
 if name == "Johnny":
@@ -6,7 +6,7 @@ if name == "Johnny":
 else:
     print(f"Hello, {name}!")
 
-# Task 2
+# Task 2 Drink Something
 
 age = int(input())
 drink_type = ""
@@ -22,7 +22,7 @@ else:
 
 print(f"drink {drink_type}")
 
-# Task 3
+# Task 3 Chat Codes
 
 count_iter = int(input())
 
@@ -37,7 +37,7 @@ for messages in range(count_iter):
     else:
         print("Bye.")
 
-# Task 4
+# Task 4 Maximum Multiple
 
 divisor = int(input())
 boundary = int(input())
@@ -47,7 +47,7 @@ for num in range(boundary, divisor, -1):
         print(num)
         break
 
-# Task 5
+# Task 5 Orders
 
 orders_count = int(input())
 total_price = 0
@@ -63,7 +63,7 @@ for order in range(orders_count):
 
 print(f"Total: ${total_price:.2f}")
 
-# Task 6
+# Task 6 String Pureness
 
 count_iter = int(input())
 
@@ -74,7 +74,7 @@ for word in range(count_iter):
     else:
         print(f"{current_word} is pure.")
 
-# Task 7
+# Task 7 Double Char
 
 while True:
     command = input()
@@ -87,7 +87,7 @@ while True:
         result += char * 2
     print(result)
 
-# Task 8
+# Task 8 ow Much Coffee Do You Need?
 
 command = input()
 coffee_count = 0
@@ -105,7 +105,7 @@ if coffee_count > 5:
 else:
     print(coffee_count)
 
-# Task 9
+# Task 9 Sorting Hat
 
 name = input()
 is_break = False
@@ -128,7 +128,7 @@ while name != "Welcome!":
 if not is_break:
     print("Welcome to Hogwarts.")
 
-# Task 10
+# Task 10 Mutate Strings
 
 first_word = input()
 second_word = input()
@@ -150,7 +150,7 @@ for index in range(len(first_word)):
 # 		first_word = word
 # 		print(word)
 
-# Task 11
+# Task 11 Easter Bread
 
 budget = float(input())
 flour_price = float(input())
@@ -172,7 +172,7 @@ while budget >= bread_price:
 
 print(f"You made {bread_count} loaves of Easter bread! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")
 
-# Task 12
+# Task 12 Christmas Spirit
 
 decoration_quantity = int(input())
 days_to_christmas = int(input())
@@ -180,29 +180,29 @@ ornament_price, ornament_points = 2, 5
 skirt_price, skirt_points = 5, 3
 garland_price, garland_points = 3, 10
 lights_price, lights_points = 15, 17
-points = 0
+spirit = 0
 money = 0
 
 for day in range(1, days_to_christmas + 1):
     if day % 11 == 0:
         decoration_quantity += 2
     if day % 10 == 0:
-        points -= 20
+        spirit -= 20
         money += skirt_price + garland_price + lights_price
     if day % 5 == 0:
         money += lights_price * decoration_quantity
-        points += lights_points
+        spirit += lights_points
         if day % 3 == 0:
-            points += 30
+            spirit += 30
     if day % 3 == 0:
         money += (skirt_price + garland_price) * decoration_quantity
-        points += skirt_points + garland_points
+        spirit += skirt_points + garland_points
     if day % 2 == 0:
         money += ornament_price * decoration_quantity
-        points += ornament_points
+        spirit += ornament_points
 
 if days_to_christmas % 10 == 0:
-    points -= 30
+    spirit -= 30
 
 print(f"Total cost: {money}")
-print(f"Total points: {points}")
+print(f"Total spirit: {spirit}")
