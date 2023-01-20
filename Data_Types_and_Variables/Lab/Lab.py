@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 Concat Names
 
 first_name = input()
 second_name = input()
@@ -6,21 +6,21 @@ delimiter = input()
 
 print(f"{first_name}{delimiter}{second_name}")
 
-# Task 2
+# Task 2 Convert Meters to Kilometers
 
 meters = int(input())
 kilometers = meters / 1000
 
 print(f"{kilometers:.2f}")
 
-# Task 3
+# Task 3 Pounds to Dollars
 
 pounds = int(input())
 dollars = pounds * 1.31
 
 print(f"{dollars:.3f}")
 
-# Task 4
+# Task 4 Centuries to Minutes
 
 centuries = int(input())
 years = centuries * 100
@@ -30,7 +30,7 @@ minutes = hours * 60
 
 print(f"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes")
 
-# Task 5
+# Task 5 Special Numbers
 
 count_iter = int(input())
 
@@ -43,7 +43,7 @@ for number in range(1, count_iter + 1):
     else:
         print(f"{number} -> False")
 
-# Task 6
+# Task 6 Next Happy Year
 
 year = int(input())
 
