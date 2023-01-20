@@ -136,4 +136,4 @@ for fight in range(1, lost_fights_count + 1):
         if shield_breaks % 2 == 0:
             expenses += armor_price
 
-print(f"Gladiator expenses: {expenses} aureus")
+print(f"Gladiator expenses: {expenses:.2f} aureus")
