@@ -1,10 +1,10 @@
-# Task 1
+# Task 1 Find the Largest
 
 number = list(map(int, input()))
 number.sort(reverse=True)
 print(*number, sep="")
 
-# Task 2
+# Task 2 Find the Capitals
 
 text = input()
 result = []
@@ -15,7 +15,7 @@ for index, value in enumerate(text):
 
 print(result)
 
-# Task 3
+# Task 3 Wolf in Sheep's Clothing
 
 animals = input().split(", ")
 
@@ -25,7 +25,7 @@ for index, value in enumerate(reversed(animals)):
     elif value == "wolf":
         print(f"Oi! Sheep number {index}! You are about to be eaten by a wolf!")
 
-# Task 4
+# Task 4 Sum of a Beach
 
 text = input().lower()
 searched_words = ["sand", "water", "fish", "sun"]
