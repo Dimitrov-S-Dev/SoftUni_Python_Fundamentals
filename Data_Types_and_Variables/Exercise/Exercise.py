@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 Integer Operations
 
 first = int(input())
 second = int(input())
@@ -8,7 +8,7 @@ forth = int(input())
 result = (((first + second) // third) * forth)
 print(f"{result}")
 
-# Task 2
+# Task 2 Chars to String
 
 first_char = input()
 second_char = input()
@@ -17,7 +17,7 @@ third_char = input()
 result = first_char + second_char + third_char
 print(result)
 
-# Task 3
+# Task 3 Elevator
 
 from math import ceil
 
@@ -29,7 +29,7 @@ if capacity != 0:
     courses = ceil(persons / capacity)
 print(courses)
 
-# Task 4
+# Task 4 Sum of Chars
 
 count_iter = int(input())
 total = 0
@@ -39,14 +39,14 @@ for _ in range(count_iter):
     total += ord(current_char)
 print(f"The sum equals: {total}")
 
-# Task 5
+# Task 5 Print Part of the ASCII Table
 
 start_index = int(input())
 end_index = int(input())
 for number in range(start_index, end_index + 1):
     print(chr(number), end=" ")
 
-# Task 6
+# Task 6 Triples of Latin Letters
 
 count_iter = int(input())
 
@@ -56,7 +56,7 @@ for a in range(count_iter):
             print(f"{chr(97 + a)}{chr(97 + b)}{chr(97 + c)}")
 
 
-# Task 7
+# Task 7 Water Overflow
 
 count_iter = int(input())
 max_capacity = 255
@@ -71,7 +71,7 @@ for _ in range(count_iter):
 
 print(capacity)
 
-# Task 8
+# Task 8 Party Profit
 
 group_size = int(input())
 days = int(input())
@@ -94,7 +94,7 @@ for day in range(1, days + 1):
 avg_coins = coins // group_size
 print(f"{group_size} companions received {avg_coins} coins each.")
 
-# Task 9
+# Task 9 Snowballs
 
 snowballs_count = int(input())
 max_weight = 0
@@ -115,7 +115,7 @@ for balls in range(snowballs_count):
 
 print(f"{max_weight} : {max_time} = {max_value:.0f} ({max_quantity})")
 
-# Task 10
+# Task 10 Gladiator Expenses
 
 lost_fights_count = int(input())
 helmet_price = float(input())
