@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 Exchange Integers
 
 first_num = int(input())
 second_num = int(input())
@@ -11,7 +11,7 @@ print(f"After:")
 print(f"a = {first_num}")
 print(f"b = {second_num}")
 
-# Task 2
+# Task 2 Prime Number Checker
 
 number = int(input())
 is_prime = True
@@ -24,7 +24,7 @@ for num in range(2, number):
 if is_prime:
     print("True")
 
-# Task 3
+# Task 3 Decrypting Messages
 
 key = int(input())
 count_iter = int(input())
@@ -36,7 +36,7 @@ for _ in range(count_iter):
     message += chr(ascid_num)
 print(message)
 
-# Task 4
+# Task 4 Balanced Brackets
 
 number_of_lines = int(input())
 is_balanced = True
