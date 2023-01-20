@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 Number Definer
 number = float(input())
 
 if number == 0:
@@ -18,7 +18,7 @@ else:
     else:
         print("negative")
 
-# Task 2
+# Task 2 Largest of Three Numbers
 
 first_num = int(input())
 second_num = int(input())
@@ -31,7 +31,7 @@ third_num = int(input())
 # 	print(third_num)
 print(max(first_num, second_num, third_num))
 
-# Task 3
+# Task 3 Word Reverse
 
 word = input()
 # reversed_word = ""
@@ -41,7 +41,7 @@ word = input()
 reversed_word = word[::-1]
 print(reversed_word)
 
-# Task 4
+# Task 4 Even Numbers
 
 count_iter = int(input())
 is_even = True
@@ -55,7 +55,7 @@ for _ in range(count_iter):
     if is_even:
         print("All numbers are even.")
 
-# Task 5
+# Task 5 Number Between 1 and 100
 
 while True:
     number = float(input())
@@ -63,7 +63,7 @@ while True:
         print(f"The number {number} is between 1 and 100")
         break
 
-# Task 6
+# Task 6 Shopping
 
 budget = int(input())
 is_all_bought = True
@@ -82,7 +82,7 @@ while command != "End":
 if is_all_bought:
     print("You bought everything needed.")
 
-# Task 7
+# Task 7 Patterns
 
 number = int(input())
 
