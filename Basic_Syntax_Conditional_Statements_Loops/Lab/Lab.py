@@ -52,8 +52,9 @@ for _ in range(count_iter):
         is_even = False
         print(f"{number} is odd!")
         break
-    if is_even:
-        print("All numbers are even.")
+
+if is_even:
+    print("All numbers are even.")
 
 # Task 5 Number Between 1 and 100
 
