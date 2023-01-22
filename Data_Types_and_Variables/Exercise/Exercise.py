@@ -55,7 +55,6 @@ for a in range(count_iter):
         for c in range(count_iter):
             print(f"{chr(97 + a)}{chr(97 + b)}{chr(97 + c)}")
 
-
 # Task 7 Water Overflow
 
 count_iter = int(input())
