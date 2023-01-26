@@ -243,5 +243,3 @@ def get_inventory(data):
 info = input().split(", ")
 get_inventory(info)
 
-
-
