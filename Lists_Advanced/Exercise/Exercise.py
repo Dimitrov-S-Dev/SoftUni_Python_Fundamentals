@@ -81,4 +81,25 @@ for room in range(1, count_iter + 1):
 if condition:
     print(f"Game On, {free_chairs} free chairs left")
 
+# Task 6 Electron Distribution
+
+
+def get_electron(num):
+    result = []
+    count = 0
+    while num:
+        count += 1
+        position = 2 * count ** 2
+        if num > position:
+            result.append(position)
+            num -= position
+        else:
+            result.append(num)
+            num = 0
+    return result
+
+
+electron = int(input())
+print(get_electron(electron))
+
 
