@@ -33,7 +33,7 @@ for _ in range(count_iter):
 print(positive)
 print(negative)
 print(f"Count of positives: {len(positive)}")
-print(f"Count of negatives: {sum(negative)}")
+print(f"Sum of negatives: {sum(negative)}")
 
 # Task 4 Search
 
