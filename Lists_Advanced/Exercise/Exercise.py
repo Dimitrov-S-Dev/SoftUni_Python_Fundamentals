@@ -23,4 +23,14 @@ def get_version(lst):
 version_str = input().split(".")
 get_version(version_str)
 
+# Task 3 Word Filter
+
+text = input().split()
+result = [el for el in text if len(el) % 2 == 0]
+
+for word in result:
+    print(word)
+
+
+
 
