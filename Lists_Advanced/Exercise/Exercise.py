@@ -33,6 +33,7 @@ for word in result:
 
 # Task 4 Number Classification
 
+
 def get_positive(lst):
     result = [str(el) for el in lst if el >= 0]
     return ", ".join(result)
@@ -61,5 +62,23 @@ print(f"Even: {get_even(numbers)}")
 print(f"Odd: {get_odd(numbers)}")
 
 # Task 5 Office Chairs
+
+count_iter = int(input())
+free_chairs = 0
+condition = True
+
+for room in range(1, count_iter + 1):
+    current_room = input().split()
+    chairs = len(current_room[0])
+    visitors = int(current_room[1])
+    if chairs < visitors:
+        diff = visitors - chairs
+        print(f"{diff} more chairs needed in room {room}")
+        condition = False
+    else:
+        free_chairs += chairs - visitors
+
+if condition:
+    print(f"Game On, {free_chairs} free chairs left")
 
 
