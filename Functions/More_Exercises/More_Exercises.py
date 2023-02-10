@@ -2,15 +2,15 @@
 
 def get_data_type(text, num):
     if text == 'int':
-        return int(num)
+        return num * 2
     elif text == 'real':
-        return float(num)
+        return float(num * 1.5)
     else:
         return f'${num}$'
 
 
 string_type = input()
-number = input()
+number = int(input())
 print(get_data_type(string_type, number))
 
 # Task 2 Center point
