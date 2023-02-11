@@ -4,7 +4,10 @@
 
 
 def get_main(lst):
-    pass
+    while True:
+        command = input()
+        if command == "Yohoho!":
+            break
 
 
 
