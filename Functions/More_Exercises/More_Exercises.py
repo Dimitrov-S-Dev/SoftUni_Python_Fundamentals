@@ -26,7 +26,7 @@ _y1 = float(input())
 _x2 = float(input())
 _y2 = float(input())
 dist_x1_y1 = get_center_point(_x1, _y1, 0, 0)
-dist_x2_y2 = get_center_point(0, 0,_x2, _y2)
+dist_x2_y2 = get_center_point(0, 0, _x2, _y2)
 if dist_x1_y1 < dist_x2_y2:
     print(f"({int(_x1)},{int(_y1)})")
 else:
