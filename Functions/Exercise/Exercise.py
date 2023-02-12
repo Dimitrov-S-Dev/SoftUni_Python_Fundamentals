@@ -13,6 +13,7 @@ print(get_smallest(all_numbers))
 
 # Task 2 Add and Subtract
 
+
 def sum_numbers(a, b):
     return a + b
 
@@ -124,7 +125,7 @@ def get_password_valid(word):
     if len(word) < 6 or len(word) > 10:
         is_valid.append('Password must be between 6 and 10 characters')
     if not word.isalnum():
-        is_valid.append('Password should have only letters and digits')
+        is_valid.append('Password must consist only of letters and digits')
     count = 0
     for elem in word:
         if elem.isdigit():

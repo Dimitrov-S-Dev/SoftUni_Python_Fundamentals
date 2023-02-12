@@ -211,7 +211,7 @@ print(f"Profit: {profit:.2f}")
 sum_of_all = sum(new_price)
 
 if sum_of_all + budget > 150:
-    print('Hello, France')
+    print('Hello, France!')
 else:
     print('Not enough money.')
 
@@ -248,7 +248,7 @@ for event in events:
             coins -= number
             print(f"You bought {order}.")
         else:
-            print(f"Closed! You cannot afford {order}.")
+            print(f"Closed! Cannot afford {order}.")
             is_bakery_closed = True
             break
 if not is_bakery_closed:
