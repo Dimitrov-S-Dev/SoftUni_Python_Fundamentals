@@ -26,7 +26,7 @@ def get_main(lst):
         command = input()
         if command == "end":
             print("Sorry you lose :(")
-            print(" ".join(lst))
+            print(' '.join(lst))
             break
         info = command.split()
         index_one = int(info[0])
