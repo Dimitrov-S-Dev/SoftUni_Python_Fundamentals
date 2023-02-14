@@ -47,7 +47,7 @@ for num in range(boundary, divisor, -1):
         print(num)
         break
 
-# Task 5 Orders
+# Task 5.Mid-Exam-Preparation Orders
 
 orders_count = int(input())
 total_price = 0

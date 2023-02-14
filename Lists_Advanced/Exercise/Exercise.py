@@ -61,7 +61,7 @@ print(f"Negative: {get_negative(numbers)}")
 print(f"Even: {get_even(numbers)}")
 print(f"Odd: {get_odd(numbers)}")
 
-# Task 5 Office Chairs
+# Task 5.Mid-Exam-Preparation Office Chairs
 
 count_iter = int(input())
 free_chairs = 0

@@ -30,7 +30,7 @@ minutes = hours * 60
 
 print(f"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes")
 
-# Task 5 Special Numbers
+# Task 5.Mid-Exam-Preparation Special Numbers
 
 count_iter = int(input())
 

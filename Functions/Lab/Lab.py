@@ -63,7 +63,7 @@ print(get_repeat(string, number))
 # result = lambda string, num: string * num
 
 
-#  Task 5 Orders
+#  Task 5.Mid-Exam-Preparation Orders
 
 def get_total(item, qty):
     if item == 'coffee':

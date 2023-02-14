@@ -39,7 +39,7 @@ for _ in range(count_iter):
     total += ord(current_char)
 print(f"The sum equals: {total}")
 
-# Task 5 Print Part of the ASCII Table
+# Task 5.Mid-Exam-Preparation Print Part of the ASCII Table
 
 start_index = int(input())
 end_index = int(input())

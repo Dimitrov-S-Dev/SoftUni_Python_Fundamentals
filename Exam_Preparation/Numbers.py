@@ -1,6 +1,6 @@
 """
 Write a program to read a sequence of integers and find and print
-the top 5 numbers greater than the average value in the sequence,
+the top 5.Mid-Exam-Preparation numbers greater than the average value in the sequence,
 sorted in descending order.
 """
 

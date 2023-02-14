@@ -76,7 +76,7 @@ count = palindromes.count(searched_word)
 print(palindromes)
 print(f"Found palindrome {count} times")
 
-# Task 5 Sorting names
+# Task 5.Mid-Exam-Preparation Sorting names
 
 names = input().split(', ')
 result = sorted(names, key=lambda item: (-len(item), item))

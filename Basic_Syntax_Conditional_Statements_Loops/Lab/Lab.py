@@ -56,7 +56,7 @@ for _ in range(count_iter):
 if is_even:
     print("All numbers are even.")
 
-# Task 5 Number Between 1 and 100
+# Task 5.Mid-Exam-Preparation Number Between 1 and 100
 
 while True:
     number = float(input())

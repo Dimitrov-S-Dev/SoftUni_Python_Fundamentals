@@ -80,7 +80,7 @@ for beggar in range(beggars_count):
 
 print(result)
 
-# Task 5 Faro Shuffle
+# Task 5.Mid-Exam-Preparation Faro Shuffle
 
 cards = input().split()
 shuffles = int(input())

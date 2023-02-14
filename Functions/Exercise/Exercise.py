@@ -67,7 +67,7 @@ number_as_str = input()
 sum_even, sum_odd = get_sum_numbers(number_as_str)
 print(f'Odd sum = {sum_odd}, Even sum = {sum_even}')
 
-# Task 5 Even Numbers
+# Task 5.Mid-Exam-Preparation Even Numbers
 
 def get_evens(lst):
     evens = []

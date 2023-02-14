@@ -51,7 +51,7 @@ for _ in range(count_iter):
 print(result)
 print(word_in_result)
 
-# Task 5 Numbers Filter
+# Task 5.Mid-Exam-Preparation Numbers Filter
 
 count_iter = int(input())
 COMMAND_EVEN = 'even'
