@@ -25,4 +25,3 @@ else:
     if command == "special":
         total_price *= 0.9
     print(f"Total price: {total_price:.2f}$")
-
