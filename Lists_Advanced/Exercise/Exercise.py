@@ -158,6 +158,58 @@ print(" ".join(decipher_message))
 
 # Task 9 Moving Target
 
+def get_shoot(lst, idx, power):
+    if idx in range(len(lst)):
+        if power >= lst[idx]:
+            lst.pop(idx)
+        else:
+            lst[idx] -= power
+    return lst
+
+
+def get_add(lst, idx, val):
+    if idx in range(len(lst)):
+        lst.insert(idx, val)
+    else:
+        print("Invalid placement!")
+    return lst
+
+
+def get_strike(lst, idx, val):
+    lst.pop(idx + val)
+    lst.pop(idx)
+    lst.pop(idx - val)
+    return lst
+
+
+def get_main(lst):
+    while True:
+        command = input()
+        if command == "End":
+            break
+        info = command.split()
+        action = info[0]
+        index = int(info[1])
+        value = int(info[2])
+
+        if action == "Shoot":
+            lst = get_shoot(lst, index, value)
+        elif action == "Add":
+            lst = get_add(lst, index, value)
+        elif action == "Strike":
+            condition = True
+            if index in range(len(lst)):
+                if (index + value) in range(len(lst)):
+                    if (index - value) in range(len(lst)):
+                        condition = False
+                        lst = get_strike(lst, index, value)
+            if condition:
+                print("Strike missed!")
+    return lst
+
+
+target_values = [int(x) for x in input().split()]
+print(*get_main(target_values), sep="|")
 
 # Task 10 Heart Delivery
 
