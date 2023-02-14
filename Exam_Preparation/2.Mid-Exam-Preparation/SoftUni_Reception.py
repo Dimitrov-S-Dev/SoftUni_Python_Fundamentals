@@ -5,6 +5,7 @@ students_cunt = int(input())
 
 total_employee_per_hour = employee_one_per_hour + employee_two_per_hour + employee_three_per_hour
 hours = 0
+
 while students_cunt > 0:
     hours += 1
     if hours % 4 == 0:
