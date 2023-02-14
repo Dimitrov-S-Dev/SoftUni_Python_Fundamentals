@@ -7,14 +7,15 @@ while command != "Love!":
     info = command.split()
     current_index = int(info[1])
     index += current_index
-    if index not in range(len(neighborhood)):
+    if index >= len(neighborhood):
         index = 0
     if neighborhood[index] == 0:
         print(f"Place {index} already had Valentine's day.")
     else:
-        if neighborhood[index] == 2:
+        neighborhood[index] -= 2
+        if neighborhood[index] == 0:
             print(f"Place {index} has Valentine's day.")
-            neighborhood[index] -= 2
+
     command = input()
 
 print(f"Cupid's last position was {index}.")
