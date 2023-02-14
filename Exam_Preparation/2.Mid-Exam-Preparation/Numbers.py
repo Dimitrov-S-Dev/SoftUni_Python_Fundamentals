@@ -1,10 +1,3 @@
-"""
-Write a program to read a sequence of integers and find and print
-the top 5.Mid-Exam-Preparation numbers greater than the average value in the sequence,
-sorted in descending order.
-"""
-
-
 def get_result(lst):
     result = []
     if len(lst) > 5:
@@ -20,7 +13,7 @@ def get_result(lst):
 numbers = list(map(int, input().split()))
 average = sum(numbers) / len(numbers)
 greater_then_average = [el for el in sorted(numbers, reverse=True) if el > average]
-if average == 1:
+if len(greater_then_average) == 0:
     print("No")
 else:
     print(get_result(greater_then_average))
