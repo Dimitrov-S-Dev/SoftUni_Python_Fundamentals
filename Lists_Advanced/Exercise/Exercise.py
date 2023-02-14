@@ -104,18 +104,21 @@ print(get_electron(electron))
 
 # Task 7 Group of 10's
 
-lst = list(map(int, input().split(", ")))
-gr_10 = [num for num in lst if 0 <= num <= 10]
-gr_20 = [num for num in lst if 11 <= num <= 20]
-gr_30 = [num for num in lst if 21 <= num <= 30]
-gr_40 = [num for num in lst if 31 <= num <= 40]
-gr_50 = [num for num in lst if 41 <= num <= 50]
+"""
+from math import ceil
 
-print(f"Group of 10's: {gr_10}")
-print(f"Group of 20's: {gr_20}")
-print(f"Group of 30's: {gr_30}")
-print(f"Group of 40's: {gr_40}")
-print(f"Group of 50's: {gr_50}")
+numbers = [int(x) for x in input().split(', ')]
+low_boundary = 1
+high_boundary = 10
+max_number = ceil(max(numbers) / 10)
+for idx in range(1, max_number + 1):
+    grouped_numbers = [x for x in numbers if low_boundary <= x <= high_boundary]
+    print(f"Group of {idx * 10}'s: {grouped_numbers}")
+    low_boundary += 10
+    high_boundary += 10
+
+"""
+
 
 # Task 8 Decipher This!
 
