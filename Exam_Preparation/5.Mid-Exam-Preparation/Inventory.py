@@ -14,7 +14,7 @@ def get_drop(lst, item):
 
 def get_combine(lst, old, new):
     if old in lst:
-        index = lst.index(old)
+        index = lst.current_index(old)
         if index in range(len(lst)):
             lst.insert(index + 1, new)
         else:
@@ -25,7 +25,7 @@ def get_combine(lst, old, new):
 
 def get_renew(lst, item):
     if item in lst:
-        position = lst.index(item)
+        position = lst.current_index(item)
         result = lst.pop(position)
         lst.append(result)
 

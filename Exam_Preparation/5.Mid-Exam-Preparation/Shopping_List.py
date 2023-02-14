@@ -18,7 +18,7 @@ def get_correct(lst, el, new_el):
 
 def get_rearrange(lst, el):
     if el in lst:
-        position = lst.index(el)
+        position = lst.current_index(el)
         item = lst.pop(position)
         lst.append(item)
     return lst

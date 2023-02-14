@@ -39,7 +39,7 @@ def get_insert(lst, title, index):
 
 def get_remove(lst, title):
     if title in lst:
-        title_index = lst.index(title)
+        title_index = lst.current_index(title)
         if title_index + 1 in range(len(lst)):
             if "Exercise" in lst[title_index + 1]:
                 lst.pop(title_index + 1)
@@ -49,8 +49,8 @@ def get_remove(lst, title):
 
 def get_swap(lst, title, new_title):
     if title in lst and new_title in lst:
-        title_index = lst.index(title)
-        new_title_index = lst.index(new_title)
+        title_index = lst.current_index(title)
+        new_title_index = lst.current_index(new_title)
         title_has_exercise = False
         new_has_exercise = False
         if title_index + 1 in range(len(lst)):
@@ -69,7 +69,7 @@ def get_swap(lst, title, new_title):
 
 def get_exercise(lst, title):
     if title in lst and f"{title}-Exercise" not in lst:
-        title_index = lst.index(title)
+        title_index = lst.current_index(title)
         lst.insert(title_index + 1, f"{title}-Exercise")
     elif title not in lst:
         lst.append(title)

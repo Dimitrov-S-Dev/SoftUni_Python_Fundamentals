@@ -14,7 +14,7 @@ In that case, print: "No equal distribution possible".
 
 def get_distribution(lst, num):
     max_num = max(lst)
-    max_num_index = lst.index(max_num)
+    max_num_index = lst.current_index(max_num)
     if len(lst) * num > sum(lst):
         return f"No equal distribution possible"
     for index, value in enumerate(lst):

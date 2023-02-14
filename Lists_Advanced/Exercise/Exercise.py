@@ -263,7 +263,7 @@ def combine_func(data, items):
     new_elem = items[1]
 
     if old_elem in data:
-        index_old_elem = data.index(old_elem)
+        index_old_elem = data.current_index(old_elem)
         data.insert(index_old_elem + 1, new_elem)
 
     return data
