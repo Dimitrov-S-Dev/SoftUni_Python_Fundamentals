@@ -40,4 +40,3 @@ else:
     print(f"You've made it!")
     print(f"Bitcoins: {bitcoins}")
     print(f"Health: {health}")
-
