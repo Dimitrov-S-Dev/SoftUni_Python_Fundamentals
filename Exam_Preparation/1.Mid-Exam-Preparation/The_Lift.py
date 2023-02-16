@@ -6,6 +6,7 @@ for index, value in enumerate(lift_places):
     if value == 4:
         continue
     free = 4 - value
+
     if free < people:
         lift_places[index] += free
         people -= free
