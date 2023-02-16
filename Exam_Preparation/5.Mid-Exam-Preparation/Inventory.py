@@ -39,6 +39,7 @@ def get_inventory(lst):
             print(", ".join(lst))
             break
         action, item = command.split(" - ")
+
         if action == "Collect":
             lst = get_collect(lst, item)
         elif action == "Drop":
