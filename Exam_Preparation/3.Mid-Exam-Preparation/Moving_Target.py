@@ -35,11 +35,13 @@ def get_main(lst):
         if action == "Shoot":
             if index in range(len(lst)):
                 lst = get_shoot(lst, index, value)
+
         elif action == "Add":
             if index in range(len(lst)):
                 lst = get_add(lst, index, value)
             else:
                 print("Invalid placement!")
+
         elif action == "Strike":
             top = index + value
             bottom = index - value
