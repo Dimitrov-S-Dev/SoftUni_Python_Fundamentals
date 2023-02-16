@@ -5,6 +5,7 @@ condition = True
 
 while command != "End of battle":
     distance = int(command)
+
     if distance > energy:
         print(f"Not enough energy! Game ends with {battles_won} won battles and {energy} energy")
         condition = False
