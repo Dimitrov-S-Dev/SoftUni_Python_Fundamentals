@@ -15,6 +15,7 @@ def get_main(p_lst, w_lst):
         command = input()
         if command == "Retire":
             pass
+        info = command.split()
 
 
 
