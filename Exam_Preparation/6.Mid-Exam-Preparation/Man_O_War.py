@@ -16,6 +16,16 @@ def get_main(p_lst, w_lst):
         if command == "Retire":
             pass
         info = command.split()
+        action = info[0]
+
+        if action == "Fire":
+            pass
+        elif action == "Defend":
+            pass
+        elif action == "Repair":
+            pass
+        elif action == "Status":
+            pass
 
 
 
