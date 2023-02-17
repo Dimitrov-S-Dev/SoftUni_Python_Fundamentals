@@ -33,9 +33,9 @@ def get_main(pirate, warship):
         command = input()
         if command == "Retire":
             if sum(pirate) != sum(warship):
-                print(f"Pirate ship status: {sum(pirate)}")
-                print(f"Warship status {sum(warship)}")
-                break
+                pirate_info = f"Pirate ship status: {sum(pirate)}"
+                warship_info = f"Warship status: {sum(warship)}"
+                return f"{pirate_info}\n {warship_info}"
         info = command.split()
         action = info[0]
 
