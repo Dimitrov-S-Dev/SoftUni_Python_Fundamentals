@@ -1,16 +1,22 @@
+def get_fire(warship, ind):
+    pass
+
+
+def get_defend(pirate, ind):
+    pass
 
 
 
+def get_repair(pirate, ind, hlth):
+    pass
 
 
 
+def get_status(pirate):
+    pass
 
 
-
-
-
-
-def get_main(p_lst, w_lst):
+def get_main(pirate, warship):
     while True:
         command = input()
         if command == "Retire":
