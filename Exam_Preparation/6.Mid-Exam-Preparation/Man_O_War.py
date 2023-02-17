@@ -11,7 +11,10 @@
 
 
 def get_main(p_lst, w_lst):
-    pass
+    while True:
+        command = input()
+        if command == "Retire":
+            pass
 
 
 
