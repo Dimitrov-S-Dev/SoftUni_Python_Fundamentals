@@ -1,5 +1,6 @@
-def get_fire(warship, ind):
-    pass
+def get_fire(warship, ind, dem):
+
+
 
 
 def get_defend(pirate, ind):
@@ -25,7 +26,11 @@ def get_main(pirate, warship):
         action = info[0]
 
         if action == "Fire":
-            pass
+            index = int(info[1])
+            demage = int(info[2])
+            if index in range(len(warship)):
+                if warship[index] - demage <= 0:
+                    print()
         elif action == "Defend":
             pass
         elif action == "Repair":
