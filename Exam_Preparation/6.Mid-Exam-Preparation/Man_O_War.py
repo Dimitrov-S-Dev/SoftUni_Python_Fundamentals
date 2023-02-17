@@ -1,5 +1,7 @@
 def get_fire(warship, ind, dem):
+    warship[ind] -= dem
 
+    return warship
 
 
 
@@ -30,7 +32,9 @@ def get_main(pirate, warship):
             demage = int(info[2])
             if index in range(len(warship)):
                 if warship[index] - demage <= 0:
-                    print()
+                    return f"You won! The enemy ship has sunken."
+                else:
+                    warship = get_fire(warship, index,demage)
         elif action == "Defend":
             pass
         elif action == "Repair":
