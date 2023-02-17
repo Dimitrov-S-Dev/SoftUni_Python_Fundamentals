@@ -10,7 +10,7 @@
 
 
 
-def get_main(lst):
+def get_main(p_lst, w_lst):
     pass
 
 
