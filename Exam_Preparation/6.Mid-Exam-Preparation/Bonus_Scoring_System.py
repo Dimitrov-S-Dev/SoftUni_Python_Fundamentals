@@ -12,5 +12,5 @@ for student in range(number_of_students):
         max_bonus = total_bonus
         max_attendance = current_attendance
 
-print(max_bonus)
-print(max_attendance)
+print(f"Max Bonus:{max_bonus}.")
+print(f"The student has attended {max_attendance} lectures.")
