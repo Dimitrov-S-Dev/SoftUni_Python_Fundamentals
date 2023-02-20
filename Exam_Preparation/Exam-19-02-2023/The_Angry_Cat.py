@@ -43,4 +43,3 @@ if command == "cheap":
     get_cheap(price_ratings, entry_point)
 elif command == "expensive":
     get_expensive(price_ratings, entry_point)
-
