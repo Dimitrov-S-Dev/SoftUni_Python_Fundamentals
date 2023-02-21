@@ -50,31 +50,54 @@
 # print(weapon)
 #
 # # Task 3 Catalogue
+#
+# class Catalogue:
+#
+#     def __init__(self, name: str):
+#         self.name = name
+#         self.products = []
+#
+#     def add_product(self, product_name:str):
+#         self.products.append(product_name)
+#
+#     def get_by_letter(self, first_letter:str):
+#         return [el for el in self.products if el.startswith(first_letter)]
+#
+#     def __repr__(self):
+#         result = f"Items in the {self.name} catalogue: \n"
+#         result += '\n'.join(self.products)
+#         return result
+#
+# catalogue = Catalogue("Furniture")
+# catalogue.add_product("Sofa")
+# catalogue.add_product("Mirror")
+# catalogue.add_product("Desk")
+# catalogue.add_product("Chair")
+# catalogue.add_product("Carpet")
+# print(catalogue.get_by_letter("C"))
+# print(catalogue)
+#
+# # Task 4 Town
 
-class Catalogue:
+class Town:
 
-    def __init__(self, name: str):
+    def __init__(self, name:str):
         self.name = name
-        self.products = []
+        self.latitude = "0°N"
+        self.longitude = "0°E"
 
-    def add_product(self, product_name:str):
-        self.products.append(product_name)
+    def set_latitude(self, latitude):
+        self.latitude = latitude
 
-    def get_by_letter(self, first_letter:str):
-        return [el for el in self.products if el.startswith(first_letter)]
+    def set_longitude(self, longitude):
+        self.longitude = longitude
 
     def __repr__(self):
-        result = f"Items in the {self.name} catalogue: \n"
-        result += '\n'.join(self.products)
-        return result
+        return f"Town: {self.name} | Latitude: {self.latitude} | Longitude: {self.longitude}"
 
-catalogue = Catalogue("Furniture")
-catalogue.add_product("Sofa")
-catalogue.add_product("Mirror")
-catalogue.add_product("Desk")
-catalogue.add_product("Chair")
-catalogue.add_product("Carpet")
-print(catalogue.get_by_letter("C"))
-print(catalogue)
+town = Town("Sofia")
+town.set_latitude("42° 41\' 51.04\" N")
+town.set_longitude("23° 19\' 26.94\" E")
+print(town)
 
 
