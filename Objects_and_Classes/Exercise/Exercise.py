@@ -78,26 +78,51 @@
 # print(catalogue)
 #
 # # Task 4 Town
+#
+# class Town:
+#
+#     def __init__(self, name:str):
+#         self.name = name
+#         self.latitude = "0°N"
+#         self.longitude = "0°E"
+#
+#     def set_latitude(self, latitude):
+#         self.latitude = latitude
+#
+#     def set_longitude(self, longitude):
+#         self.longitude = longitude
+#
+#     def __repr__(self):
+#         return f"Town: {self.name} | Latitude: {self.latitude} | Longitude: {self.longitude}"
+#
+# town = Town("Sofia")
+# town.set_latitude("42° 41\' 51.04\" N")
+# town.set_longitude("23° 19\' 26.94\" E")
+# print(town)
+#
+# # Task 5 Class
 
-class Town:
-
+class Class:
+    __students_count = 22
     def __init__(self, name:str):
         self.name = name
-        self.latitude = "0°N"
-        self.longitude = "0°E"
-
-    def set_latitude(self, latitude):
-        self.latitude = latitude
-
-    def set_longitude(self, longitude):
-        self.longitude = longitude
+        self.students = []
+        self.grades = []
+        self.average_grade = 0
+    def add_student(self, name:str, grade:float):
+        if Class.__students_count > len(self.students):
+            self.students.append(name)
+            self.grades.append(grade)
+    def get_average_grade(self):
+        self.average_grade += sum(self.grades) / len(self.grades)
+        return f"{self.average_grade:.2f}"
 
     def __repr__(self):
-        return f"Town: {self.name} | Latitude: {self.latitude} | Longitude: {self.longitude}"
-
-town = Town("Sofia")
-town.set_latitude("42° 41\' 51.04\" N")
-town.set_longitude("23° 19\' 26.94\" E")
-print(town)
+        return f"The students in {self.name}: {','.join(self.students)}. Average grade: {self.get_average_grade()}"
 
 
+a_class = Class("11B")
+a_class.add_student("Peter", 4.80)
+a_class.add_student("George", 6.00)
+a_class.add_student("Amy", 3.50)
+print(a_class)
