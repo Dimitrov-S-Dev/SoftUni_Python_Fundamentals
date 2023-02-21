@@ -200,7 +200,8 @@ class Vehicle:
     def buy(self, money:int, owner:str):
         if self.price <= money and self.owner is None:
             self.owner = owner
-            return f"Successfully bought a {self.type}.Change: {self.owner}"
+            change = money - self.price
+            return f"Successfully bought a {self.type}.Change: {change}"
         elif self.price > money:
             return f"Sorry not enough money"
         elif self.owner is not None:
