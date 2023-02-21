@@ -254,7 +254,7 @@ class Movie:
 
     def __repr__(self):
         return f"Movie name: {self.name}; Movie director {self.director}."\
-               f" Total watched movies: {Movie.__watched_movies}"
+               f" Total watched movies: {self.__watched_movies}"
 
 first_movie = Movie("Inception","Christopher Nolan")
 second_movie = Movie("The Matrix","The Wachowskis")
