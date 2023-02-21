@@ -201,21 +201,25 @@ class Vehicle:
         if self.price <= money and self.owner is None:
             self.owner = owner
             change = money - self.price
-            return f"Successfully bought a {self.type}.Change: {change}"
+            return f"Successfully bought a {self.type}.Change: {change:.2f}"
+
         elif self.price > money:
             return f"Sorry not enough money"
+
         elif self.owner is not None:
             return f"Car already sold"
 
     def sell(self):
         if self.owner is not None:
             self.owner = None
-        return f"Vehicle has no owner"
+        else:
+            return f"Vehicle has no owner"
 
     def __repr__(self):
         if self.owner is not None:
             return f"{self.model} {self.type} is owned by: {self.owner}"
-        return f"{self.model} {self.type} is on sale: {self.price}"
+        else:
+            return f"{self.model} {self.type} is on sale: {self.price}"
 
 
 vehicle_type = "car"
@@ -227,4 +231,42 @@ print(vehicle.buy(35000, "George"))
 print(vehicle)
 vehicle.sell()
 print(vehicle)
+
+# Task 9 Movie
+
+class Movie:
+    __watched_movies = 0
+    def __init__(self, name, director):
+        self.name = name
+        self.director = director
+        self.watched = False
+
+    def change_name(self, new_name:str):
+        self.name = new_name
+
+    def change_director(self, new_director:str):
+        self.director = new_director
+
+    def watch(self):
+        if self.watched:
+            pass
+        else:
+            self.watched = True
+            Movie.__watched_movies += 1
+
+    def __repr__(self):
+        return f"Movie name: {self.name}; Movie director {self.director}."\
+               f" Total watched movies: {Movie.__watched_movies}"
+
+first_movie = Movie("Inception","Christopher Nolan")
+second_movie = Movie("The Matrix","The Wachowskis")
+third_movie = Movie("The Predator","Shane Black")
+first_movie.change_director("Me")
+third_movie.change_name("My Movie")
+first_movie.watch()
+third_movie.watch()
+first_movie.watch()
+print(first_movie)
+print(second_movie)
+print(third_movie)
 
