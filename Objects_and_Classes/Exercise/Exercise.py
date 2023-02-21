@@ -248,9 +248,7 @@ class Movie:
         self.director = new_director
 
     def watch(self):
-        if self.watched:
-            pass
-        else:
+        if not self.watched:
             self.watched = True
             Movie.__watched_movies += 1
 
@@ -269,4 +267,3 @@ first_movie.watch()
 print(first_movie)
 print(second_movie)
 print(third_movie)
-
