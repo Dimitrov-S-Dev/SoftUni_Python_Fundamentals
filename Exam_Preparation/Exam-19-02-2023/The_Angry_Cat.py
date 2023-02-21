@@ -1,4 +1,4 @@
-def get_cheap(lst, ind):
+def get_cheap(lst:list, ind:int):
     sum_left = 0
     sum_right = 0
     start_value = lst[ind]
