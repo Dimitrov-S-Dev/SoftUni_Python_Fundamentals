@@ -29,5 +29,7 @@ for product in search_products:
     else:
         print(f"Sorry, we don't have {product}")
 
+# Task 3 Statistics
+
 
 
