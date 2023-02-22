@@ -31,23 +31,40 @@
 
 # Task 3 Statistics
 
-products ={}
+# products ={}
+#
+# while True:
+#     command = input()
+#     if command == "statistics":
+#         break
+#     items = command.split(": ")
+#     for index in range(0, len(items), 2):
+#         key = items[index]
+#         value = int(items[index + 1])
+#         if key not in products:
+#             products[key] = 0
+#         products[key] += value
+#
+#
+# print(f"Products is stock:")
+# for elem in products:
+#     print(f"- {elem}")
+# print(f"Total Products: {len(products)}")
+# print(f"Total Quantity: {sum(products.values())}")
 
-while True:
-    command = input()
-    if command == "statistics":
-        break
-    items = command.split(": ")
-    for index in range(0, len(items), 2):
-        key = items[index]
-        value = int(items[index + 1])
-        if key not in products:
-            products[key] = 0
-        products[key] += value
+# Task 4 Students
 
+students = {}
+command = input().split(":")
 
-print(f"Products is stock:")
-for elem in products:
-    print(f"- {elem}")
-print(f"Total Products: {len(products)}")
-print(f"Total Quantity: {sum(products.values())}")
+while len(command) > 1:
+    name, id_num, course = command[0], command[1], command[2]
+    if course not in students:
+        students[course] = []
+    students[course].append(f"{name} - {id_num}")
+    command = input().split(":")
+
+searched_course = command[0].replace("_", " ")
+for student in students[searched_course]:
+    print(student)
+
