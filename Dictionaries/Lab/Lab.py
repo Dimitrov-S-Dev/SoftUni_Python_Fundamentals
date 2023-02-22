@@ -9,3 +9,7 @@ for index in range(0, len(items), 2):
     bakery[key] = value
 
 print(bakery)
+
+
+# Task 2 Stock
+
