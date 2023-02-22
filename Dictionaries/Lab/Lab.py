@@ -42,9 +42,9 @@ while True:
         key = items[index]
         value = int(items[index + 1])
         if key not in products:
-            products[key] = value
-        else:
-            products[key] += value
+            products[key] = 0
+        products[key] += value
+
 
 print(f"Products is stock:")
 for elem in products:
