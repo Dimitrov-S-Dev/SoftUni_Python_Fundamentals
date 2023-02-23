@@ -31,10 +31,64 @@
 
 # Task 3 Capitals
 
-countries = input().split(", ")
-capitals = input().split(", ")
+# countries = input().split(", ")
+# capitals = input().split(", ")
+#
+# result = {countries[index]: capitals[index] for index in range(len(countries))}
+#
+# for key, value in result.items():
+#     print(f"{key} -> {value}")
 
-result = {countries[index]: capitals[index] for index in range(len(countries))}
+# Task 4 Phonebook
+
+# info = input()
+# result = {}
+#
+# while not info.isdigit():
+#     name, number = info.split("-")
+#     result[name] = number
+#     info = input()
+#
+# count = int(info)
+# for _ in range(count):
+#     current_name = input()
+#     for key, value in result.items():
+#         if current_name in key:
+#             print(f"{key} -> {value}")
+#         else:
+#             print(f"Contact {current_name} does not exist.")
+
+# Task 5 Legendary Farming
+
+result = {"shards": 0, "fragments": 0, "motes": 0}
+info = input().split()
+is_collected = True
+
+while is_collected:
+    for index in range(0, len(info), 2):
+        material = info[index + 1].lower()
+        quantity = int(info[index])
+        if material not in result.keys():
+            result[material] = 0
+        result[material] += quantity
+        if result["shards"] >= 250:
+            result["shards"] -= 250
+            print("Shadowmourne obtained!")
+            is_collected = False
+            break
+        elif result["fragments"] >= 250:
+            result["fragments"] -= 250
+            print("Valanyr obtained!")
+            is_collected = False
+        elif result["motes"] >= 250:
+            result["motes"] -= 250
+            print("Dragonwrath obtained!")
+            is_collected = False
+        if not is_collected:
+            break
+    if not is_collected:
+        break
+    info = input().split()
 
 for key, value in result.items():
-    print(f"{key} -> {value}")
+    print(f"{key}: {value}")
