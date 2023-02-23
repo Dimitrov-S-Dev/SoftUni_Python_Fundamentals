@@ -60,35 +60,59 @@
 
 # Task 5 Legendary Farming
 
-result = {"shards": 0, "fragments": 0, "motes": 0}
-info = input().split()
-is_collected = True
+# result = {"shards": 0, "fragments": 0, "motes": 0}
+# info = input().split()
+# is_collected = True
+#
+# while is_collected:
+#     for index in range(0, len(info), 2):
+#         material = info[index + 1].lower()
+#         quantity = int(info[index])
+#         if material not in result.keys():
+#             result[material] = 0
+#         result[material] += quantity
+#         if result["shards"] >= 250:
+#             result["shards"] -= 250
+#             print("Shadowmourne obtained!")
+#             is_collected = False
+#             break
+#         elif result["fragments"] >= 250:
+#             result["fragments"] -= 250
+#             print("Valanyr obtained!")
+#             is_collected = False
+#         elif result["motes"] >= 250:
+#             result["motes"] -= 250
+#             print("Dragonwrath obtained!")
+#             is_collected = False
+#         if not is_collected:
+#             break
+#     if not is_collected:
+#         break
+#     info = input().split()
+#
+# for key, value in result.items():
+#     print(f"{key}: {value}")
 
-while is_collected:
-    for index in range(0, len(info), 2):
-        material = info[index + 1].lower()
-        quantity = int(info[index])
-        if material not in result.keys():
-            result[material] = 0
-        result[material] += quantity
-        if result["shards"] >= 250:
-            result["shards"] -= 250
-            print("Shadowmourne obtained!")
-            is_collected = False
-            break
-        elif result["fragments"] >= 250:
-            result["fragments"] -= 250
-            print("Valanyr obtained!")
-            is_collected = False
-        elif result["motes"] >= 250:
-            result["motes"] -= 250
-            print("Dragonwrath obtained!")
-            is_collected = False
-        if not is_collected:
-            break
-    if not is_collected:
+# Task 6 Orders
+
+result = {}
+
+while True:
+    command = input()
+    if command == "buy":
         break
-    info = input().split()
+    info = command.split()
+    product = info[0]
+    price = float(info[1])
+    quantity = int(info[2])
+    if product not in result:
+        result[product] = 0
+    else:
+        result[price] = price
+    result[product] += quantity * price
 
 for key, value in result.items():
-    print(f"{key}: {value}")
+    print(f"{key} -> {value:.2f}")
+
+
+
