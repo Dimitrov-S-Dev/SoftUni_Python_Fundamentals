@@ -146,20 +146,37 @@
 
 # Task 8 Courses
 
+# result = {}
+#
+# while True:
+#     command = input()
+#     if command == "end":
+#         break
+#     course_name, student_name = command.split(" : ")
+#     if course_name not in result:
+#         result[course_name] = []
+#     result[course_name].append(student_name)
+#
+# for key in result.keys():
+#     print(f"{key}: {len(result[key])}")
+#     for el in result[key]:
+#         print(f"-- {el}")
+#
+
+# Task 9 Student Academy
+
+count_iter = int(input())
 result = {}
 
-while True:
-    command = input()
-    if command == "end":
-        break
-    course_name, student_name = command.split(" : ")
-    if course_name not in result:
-        result[course_name] = []
-    result[course_name].append(student_name)
+for _ in range(count_iter):
+    student = input()
+    grade = float(input())
+    if student not in result.keys():
+        result[student] = []
+    result[student].append(grade)
 
-for key in result.keys():
-    print(f"{key}: {len(result[key])}")
-    for el in result[key]:
-        print(f"-- {el}")
-
+for key, value in result.items():
+    avg = sum(value) / len(value)
+    if avg >= 4.50:
+        print(f"{key} -> {avg}")
 
