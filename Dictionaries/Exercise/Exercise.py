@@ -126,7 +126,7 @@
 #     if action == "register":
 #         name = info[1]
 #         number = info[2]
-#         if name in result:
+#         if name in result.keys():
 #             print(f"ERROR: already registered with plate number {number}")
 #         else:
 #             result[name] = number
@@ -143,5 +143,23 @@
 # for key, value in result.items():
 #     print(f"{key} => {value}")
 
+
+# Task 8 Courses
+
+result = {}
+
+while True:
+    command = input()
+    if command == "end":
+        break
+    course_name, student_name = command.split(" : ")
+    if course_name not in result:
+        result[course_name] = []
+    result[course_name].append(student_name)
+
+for key in result.keys():
+    print(f"{key}: {len(result[key])}")
+    for el in result[key]:
+        print(f"-- {el}")
 
 
