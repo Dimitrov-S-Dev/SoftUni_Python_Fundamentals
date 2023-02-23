@@ -54,17 +54,23 @@
 
 # Task 4 Students
 
-students = {}
-command = input().split(":")
+# students = {}
+# command = input().split(":")
+#
+# while len(command) > 1:
+#     name, id_num, course = command[0], command[1], command[2]
+#     if course not in students:
+#         students[course] = []
+#     students[course].append(f"{name} - {id_num}")
+#     command = input().split(":")
+#
+# searched_course = command[0].replace("_", " ")
+# for student in students[searched_course]:
+#     print(student)
 
-while len(command) > 1:
-    name, id_num, course = command[0], command[1], command[2]
-    if course not in students:
-        students[course] = []
-    students[course].append(f"{name} - {id_num}")
-    command = input().split(":")
+# Task 5 ASCII Value
 
-searched_course = command[0].replace("_", " ")
-for student in students[searched_course]:
-    print(student)
+chars = input().split(", ")
 
+chars_dict = {key:ord(key) for key in chars}
+print(chars_dict)
