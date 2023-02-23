@@ -64,7 +64,7 @@ for i in range(1, n+1):
     print(Rec(i), end=" ")
 
 
-# Task 5.Mid-Exam-Preparation Multiplication Sign
+# Task 5 Mid-Exam-Preparation Multiplication Sign
 
 def get_negative_positive(lst):
     for digit in lst:

@@ -153,7 +153,6 @@ print(inventory.add_item("bottle"))
 print(inventory.get_capacity())
 print(inventory)
 
-
 # Task 7 Articles
 
 class Article:

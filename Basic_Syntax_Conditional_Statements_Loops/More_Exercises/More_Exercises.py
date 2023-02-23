@@ -20,6 +20,7 @@ print(result)
 animals = input().split(", ")
 
 for index, value in enumerate(reversed(animals)):
+
     if value == "wolf" and index == 0:
         print("Pls go away and stop eating my sheep.")
     elif value == "wolf":

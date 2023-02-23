@@ -143,7 +143,7 @@ for index in range(len(first_word)):
     print(current_word)
     final_word = current_word
 
-# ------------>       alternative option      <------------------
+# ------------>      alternative option      <------------------
 # for i in range(len(first_word)):
 # 	if first_word[i] != second_word[i]
 # 		replacement = second_word[i]

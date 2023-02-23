@@ -11,7 +11,6 @@ Note: If there are two or more ways out, she always chooses the longest one.
 · Otherwise, print: "Kate cannot get out".
 """
 
-
 def get_start(lst):
     for index, value in enumerate(lst, 1):
         if value == "k":

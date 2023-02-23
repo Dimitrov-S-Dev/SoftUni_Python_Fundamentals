@@ -1,4 +1,5 @@
 # Task 1 Number Definer
+
 number = float(input())
 
 if number == 0:

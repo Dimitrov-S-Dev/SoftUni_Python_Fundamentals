@@ -169,7 +169,6 @@ def get_loading_bar(num):
 number = int(input())
 print(get_loading_bar(number))
 
-
 # Task 12 Factorial division
 
 def get_factorial(num):

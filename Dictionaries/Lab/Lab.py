@@ -10,7 +10,6 @@ for index in range(0, len(items), 2):
 
 print(bakery)
 
-
 # Task 2 Stock
 
 items = input().split()

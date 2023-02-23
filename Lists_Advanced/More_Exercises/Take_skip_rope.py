@@ -38,7 +38,6 @@ Take 0 characters and skip 4 characters:
 After that, print the final string on the console.
 """
 
-
 def get_char(lst):
     return [el for el in lst if not el.isdigit()]
 

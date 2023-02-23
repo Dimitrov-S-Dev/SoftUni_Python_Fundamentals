@@ -53,6 +53,7 @@ print(train)
 #     command = input()
 #
 # print([x for x in importance_lst if x != 0])
+
 command = input()
 tasks_lst = []
 

@@ -24,7 +24,6 @@ you should do the same with the Exercises,
 if there are any following the lessons.
 """
 
-
 def get_add(lst, title):
     if title not in lst:
         lst.append(title)
