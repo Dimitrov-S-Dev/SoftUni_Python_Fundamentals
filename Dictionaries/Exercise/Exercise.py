@@ -95,24 +95,53 @@
 
 # Task 6 Orders
 
-result = {}
+# result = {}
+#
+# while True:
+#     command = input()
+#     if command == "buy":
+#         break
+#     info = command.split()
+#     product = info[0]
+#     price = float(info[1])
+#     quantity = int(info[2])
+#     if product not in result:
+#         result[product] = 0
+#     else:
+#         result[price] = price
+#     result[product] += quantity * price
+#
+# for key, value in result.items():
+#     print(f"{key} -> {value:.2f}")
+#
 
-while True:
-    command = input()
-    if command == "buy":
-        break
-    info = command.split()
-    product = info[0]
-    price = float(info[1])
-    quantity = int(info[2])
-    if product not in result:
-        result[product] = 0
-    else:
-        result[price] = price
-    result[product] += quantity * price
+# Task 7 SoftUni Parking
 
-for key, value in result.items():
-    print(f"{key} -> {value:.2f}")
+# count_iter = int(input())
+# result = {}
+#
+# for _ in range(count_iter):
+#     info = input().split()
+#     action = info[0]
+#     if action == "register":
+#         name = info[1]
+#         number = info[2]
+#         if name in result:
+#             print(f"ERROR: already registered with plate number {number}")
+#         else:
+#             result[name] = number
+#             print(f"{name} registered {number} successfully")
+#     elif action == "unregister":
+#         name = info[1]
+#         if name in result.keys():
+#             print(f"{name} unregistered successfully")
+#             del result[name]
+#
+#         else:
+#             print(f"ERROR: user {name} not found")
+#
+# for key, value in result.items():
+#     print(f"{key} => {value}")
 
 
 
