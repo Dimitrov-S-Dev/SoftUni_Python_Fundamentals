@@ -165,18 +165,37 @@
 
 # Task 9 Student Academy
 
-count_iter = int(input())
+# count_iter = int(input())
+# result = {}
+#
+# for _ in range(count_iter):
+#     student = input()
+#     grade = float(input())
+#     if student not in result.keys():
+#         result[student] = []
+#     result[student].append(grade)
+#
+# for key, value in result.items():
+#     avg = sum(value) / len(value)
+#     if avg >= 4.50:
+#         print(f"{key} -> {avg}")
+
+# Task 10 Company Users
+
 result = {}
 
-for _ in range(count_iter):
-    student = input()
-    grade = float(input())
-    if student not in result.keys():
-        result[student] = []
-    result[student].append(grade)
+while True:
+    command = input()
+    if command == "End":
+        break
+    company_name, employee = command.split(" -> ")
+    if company_name not in result.keys():
+        result[company_name] = []
+    if employee not in result[company_name]:
+        result[company_name].append(employee)
 
-for key, value in result.items():
-    avg = sum(value) / len(value)
-    if avg >= 4.50:
-        print(f"{key} -> {avg}")
+for key in result.keys():
+    print(f"{key}")
+    for el in result[key]:
+        print(f"-- {el}")
 
