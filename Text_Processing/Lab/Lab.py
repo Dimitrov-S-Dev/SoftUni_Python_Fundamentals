@@ -16,10 +16,21 @@
 
 # Task 2 Repeat String
 
-string = input().split()
+# string = input().split()
+#
+# result = [el * len(el) for el in string]
+# print("".join(result))
 
-result = [el * len(el) for el in string]
-print("".join(result))
+# Task 3 Substring
+
+# first = input()
+# second = input()
+#
+# while first in second:
+#     second = second.replace(first, "")
+#
+# print(second)
+
 
 
 
