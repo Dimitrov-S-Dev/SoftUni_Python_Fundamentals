@@ -40,5 +40,18 @@
 
 # Task 3 Extract File
 
+# def get_name(word):
+#     name = ""
+#     for index in range(len(word) - 1, -1, -1):
+#         if word[index] == "\\":
+#             break
+#         name += word[index]
+#     return name[::-1]
+#
+#
+# file = input().split(".")
+# print(f"File name: {get_name(file[0])}")
+# print(f"File extension: {file[1]}")
 
 
+# Task 4 Caesar Cipher
