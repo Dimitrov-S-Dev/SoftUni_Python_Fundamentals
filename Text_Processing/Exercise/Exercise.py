@@ -41,17 +41,26 @@
 # Task 3 Extract File
 
 # def get_name(word):
-#     name = ""
-#     for index in range(len(word) - 1, -1, -1):
-#         if word[index] == "\\":
-#             break
-#         name += word[index]
-#     return name[::-1]
+#     name, extension = word.split(".")
+#     result = f"File name: {name}"
+#     result += f"\nFile extension: {extension}"
+#     return result
 #
-#
-# file = input().split(".")
-# print(f"File name: {get_name(file[0])}")
-# print(f"File extension: {file[1]}")
-
+# file = input().split("\\")
+# print(get_name(file[-1]))
 
 # Task 4 Caesar Cipher
+
+# text = input()
+# result = ""
+#
+# for char in text:
+#     index = ord(char) + 3
+#     result += chr(index)
+#
+# print(result)
+
+# Task 5 Emoticon Finder
+
+
+
