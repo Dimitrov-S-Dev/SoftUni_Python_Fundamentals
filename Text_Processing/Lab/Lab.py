@@ -35,7 +35,7 @@ print(second)
 # Task 4 Text Filer
 
 banned_words = input().split(", ")
-text = input()
+text = input("""""")
 
 for word in banned_words:
     text = text.replace(word, "*" * len(word))
