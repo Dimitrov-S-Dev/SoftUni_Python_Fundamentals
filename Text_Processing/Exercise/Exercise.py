@@ -62,5 +62,12 @@
 
 # Task 5 Emoticon Finder
 
+# text = input("""""")
+#
+# for index in range(len(text)):
+#     if text[index] == ":":
+#         print(f"{text[index]}{text[index + 1]}")
+
+# Task 6  Replace Repeating Chars
 
 
