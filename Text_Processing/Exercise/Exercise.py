@@ -62,7 +62,7 @@
 
 # Task 5 Emoticon Finder
 
-# text = input("""""")
+# text = input("")
 #
 # for index in range(len(text)):
 #     if text[index] == ":":
@@ -70,4 +70,16 @@
 
 # Task 6  Replace Repeating Chars
 
+# def get_result(word):
+#     result = word[0]
+#     for char in word:
+#         if char == result[-1]:
+#             continue
+#         result += char
+#     return result
+#
+# text = input()
+# print(get_result(text))
+
+# Task 7 String Explosion
 
