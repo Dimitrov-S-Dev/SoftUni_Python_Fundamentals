@@ -14,6 +14,8 @@
 #
 # username = input().split(", ")
 # get_main(username)
+import string
+
 
 # Task 2 Character Multiplier
 
@@ -106,30 +108,57 @@
 # print(get_result(text))
 
 # Task 8 Letters Change Numbers
+from string import ascii_lowercase
 
-# def get_main(lst):
-#
-#
-# text = input().split()
+def get_num(text):
+    current_num = [num for num in text if num.isdigit()]
+    result = 0
 
+    for i in range(len(text)):
+        if text[i].isalpha():
+            index = ascii_lowercase.index(text[i].lower()) + 1
+
+            if i == 0:
+                if text[i] == text[i].lower():
+                    result = int("".join(current_num)) * index
+                else:
+                    result = int("".join(current_num)) / index
+            else:
+                if text[i] == text[i].lower():
+                    result += index
+                else:
+                    result -= index
+    return result
+
+def get_main(lst):
+    result = 0
+
+    for num in lst:
+        result += get_num(num)
+
+    print(f"{result:.2f}")
+
+
+text = input().split()
+get_main(text)
 
 # Task 9 Rage Quit
 
 
-def get_result(word):
-    result = ""
-    container = ""
-    for elem in word:
-        if not elem.isdigit():
-            container += elem.upper()
-            continue
-        if elem.isdigit():
-            container *= int(elem)
-            result += container
-            container = ""
-    symb = set(result)
-    print(f"Unique symbols used {len(symb)}")
-    print(result)
-
-text = input()
-get_result(text)
+# def get_result(word):
+#     result = ""
+#     container = ""
+#     for elem in word:
+#         if not elem.isdigit():
+#             container += elem.upper()
+#             continue
+#         if elem.isdigit():
+#             container *= int(elem)
+#             result += container
+#             container = ""
+#     symb = set(result)
+#     print(f"Unique symbols used {len(symb)}")
+#     print(result)
+#
+# text = input()
+# get_result(text)
