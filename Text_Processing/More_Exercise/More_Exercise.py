@@ -23,3 +23,19 @@
 
 # Task 2 ASCII Sumator
 
+# def get_main(txt,begin, end):
+#     result = 0
+#
+#     for char in txt:
+#         if ord(char) in range(begin, end):
+#             result += ord(char)
+#
+#     return result
+#
+#
+# start = ord(input())
+# end = ord(input())
+# text = input()
+# print(get_main(text, start, end))
+
+
