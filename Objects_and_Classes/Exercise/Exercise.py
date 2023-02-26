@@ -61,7 +61,7 @@ class Catalogue:
         self.products.append(product_name)
 
     def get_by_letter(self, first_letter:str):
-        return [el for el in self.products if el.startswith(first_letter)]
+        return sorted([el for el in self.products if el.startswith(first_letter)], key=lambda x: len(x))
 
     def __repr__(self):
         result = f"Items in the {self.name} catalogue: \n"
@@ -114,10 +114,10 @@ class Class:
             self.grades.append(grade)
     def get_average_grade(self):
         average_grade = sum(self.grades) / len(self.grades)
-        return f"{average_grade:.2f}"
+        return average_grade
 
     def __repr__(self):
-        return f"The students in {self.name}: {','.join(self.students)}. Average grade: {self.get_average_grade()}"
+        return f"The students in {self.name}: {', '.join(self.students)}. Average grade: {self.get_average_grade():.2f}"
 
 
 a_class = Class("11B")
