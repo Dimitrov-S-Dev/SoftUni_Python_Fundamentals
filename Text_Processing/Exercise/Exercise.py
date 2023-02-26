@@ -83,3 +83,53 @@
 
 # Task 7 String Explosion
 
+# def get_result(word):
+#     result = ""
+#     explosion = False
+#     count = 0
+#     for elem in word:
+#         if elem == ">":
+#             explosion = True
+#             result += ">"
+#             continue
+#         if elem.isdigit() and explosion:
+#             explosion = False
+#             count += int(elem)
+#         if count > 0:
+#             count -= 1
+#             continue
+#         else:
+#             result += elem
+#     return result
+#
+# text = input()
+# print(get_result(text))
+
+# Task 8 Letters Change Numbers
+
+# def get_main(lst):
+#
+#
+# text = input().split()
+
+
+# Task 9 Rage Quit
+
+
+def get_result(word):
+    result = ""
+    container = ""
+    for elem in word:
+        if not elem.isdigit():
+            container += elem.upper()
+            continue
+        if elem.isdigit():
+            container *= int(elem)
+            result += container
+            container = ""
+    symb = set(result)
+    print(f"Unique symbols used {len(symb)}")
+    print(result)
+
+text = input()
+get_result(text)
