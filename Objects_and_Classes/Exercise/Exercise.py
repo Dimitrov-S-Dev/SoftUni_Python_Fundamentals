@@ -200,10 +200,10 @@ class Vehicle:
         if self.price <= money and self.owner is None:
             self.owner = owner
             change = money - self.price
-            return f"Successfully bought a {self.type}.Change: {change:.2f}"
+            return f"Successfully bought a {self.type}. Change: {change:.2f}"
 
         elif self.price > money:
-            return f"Sorry not enough money"
+            return f"Sorry, not enough money"
 
         elif self.owner is not None:
             return f"Car already sold"
@@ -252,8 +252,8 @@ class Movie:
             Movie.__watched_movies += 1
 
     def __repr__(self):
-        return f"Movie name: {self.name}; Movie director {self.director}."\
-               f" Total watched movies: {self.__watched_movies}"
+        return f"Movie name: {self.name}; Movie director: {self.director}. "\
+                f"Total watched movies: {Movie.__watched_movies}"
 
 first_movie = Movie("Inception","Christopher Nolan")
 second_movie = Movie("The Matrix","The Wachowskis")
