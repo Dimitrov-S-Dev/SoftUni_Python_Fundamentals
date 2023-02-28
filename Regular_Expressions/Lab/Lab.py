@@ -17,3 +17,17 @@
 #
 # print(", ".join(valid_numbers))
 
+# Task 3 Match Dates
+import re
+
+pattern = r"(\d{2})([\/.-])([A-Z][a-z]{2})(\2)([0-9]{4})"
+dates = input()
+
+result = re.findall(pattern, dates)
+
+for match in result:
+    print(f"Day: {match[0]}, Month: {match[2]}, Year: {match[4]}")
+
+
+
+
