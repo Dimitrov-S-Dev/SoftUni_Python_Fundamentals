@@ -166,5 +166,47 @@ text = input()
 get_result(text)
 
 
+# Winning Ticket
 
+def additional_func(partition):
+    curr_max_sum = 0
+    special_char = ""
 
+    for char in partition:
+        if char != special_char:
+            if curr_max_sum >= 6:
+                break
+            curr_max_sum = 1
+            special_char = char
+        else:
+            curr_max_sum += 1
+    return [curr_max_sum, special_char]
+
+def ticket_validator(text):
+    ticket_condition = ""
+    if len(text) != 20:
+        ticket_condition = "invalid ticket"
+    elif text[0] * 20 == text and text[0] in "@#$^":
+        ticket_condition = f'ticket "{text}" - 10{text[0]} Jackpot!'
+    else:
+        data_source = ""
+        if additional_func(text[0:int(len(text) / 2)]) > additional_func(text[int(len(text) / 2):]):
+            data_source = additional_func(text[int(len(text) / 2):])
+        else:
+            data_source = additional_func(text[0:int(len(text) / 2)])
+        number_of_spec_signs = data_source[0]
+        special_char = data_source[1]
+
+        if number_of_spec_signs < 6 or special_char not in "@#^$":
+            ticket_condition = f'ticket "{text}" - no match'
+        else:
+            ticket_condition = f'ticket "{text}" - {number_of_spec_signs}{special_char} '
+    return ticket_condition
+
+def get_winning_ticket(lst):
+    for ticket in lst:
+        print(ticket_validator(ticket))
+
+tickets = input()
+data = [x.strip() for x in tickets.split(", ")]
+get_winning_ticket(data)
