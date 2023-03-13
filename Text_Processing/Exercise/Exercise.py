@@ -146,24 +146,26 @@ get_main(text)
 
 # Task 9 Rage Quit
 
+text = input().upper()
 
-def get_result(word):
-    result = ""
-    container = ""
-    for elem in word:
-        if not elem.isdigit():
-            container += elem.upper()
-            continue
-        if elem.isdigit():
-            container *= int(elem)
-            result += container
-            container = ""
-    symb = set(result)
-    print(f"Unique symbols used {len(symb)}")
-    print(result)
+result = ""
+container = ""
 
-text = input()
-get_result(text)
+for i in range(len(text)):
+    if not text[i].isdigit():
+        container += text[i]
+    else:
+        num = text[i]
+        if i + 1 in range(len(text)):
+            if text[i + 1].isdigit():
+                num += text[i + 1]
+        container *= int(num)
+        result += container
+        container = ""
+
+symb = set(result)
+print(f"Unique symbols used: {len(symb)}")
+print(result)
 
 
 # Task 10 Winning Ticket
