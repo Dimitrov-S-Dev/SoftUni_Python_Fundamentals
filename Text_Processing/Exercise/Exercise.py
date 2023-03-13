@@ -166,7 +166,7 @@ text = input()
 get_result(text)
 
 
-# Winning Ticket
+# Task 10 Winning Ticket
 
 def additional_func(partition):
     curr_max_sum = 0
