@@ -30,12 +30,37 @@ import re
 
 # Task 4 Extract Email
 
-pattern = r"\s(([a-z0-9]+[a-z0-9\.\-\_]*)@[a-z\-]+(\.[a-z]+)+)\b"
+# pattern = r"\s(([a-z0-9]+[a-z0-9\.\-\_]*)@[a-z\-]+(\.[a-z]+)+)\b"
+#
+# text = input()
+#
+# matches = re.findall(pattern, text)
+# for match in matches:
+#     print(match[0])
 
-text = input()
+# Task 5 Furniture
 
-matches = re.findall(pattern, text)
-for match in matches:
-    print(match[0])
+# bought_furniture = []
+# total_sum = 0
+#
+# pattern = r"(?P<name>[A-Za-z]+)<<(?P<price>\d+\.?\d*)\!(?P<qty>\d+)"
+#
+# while True:
+#     command = input()
+#     if command == "Purchase":
+#         break
+#     maches = re.finditer(pattern, command)
+#     if maches:
+#         for mach in maches:
+#             name = mach.group("name")
+#             bought_furniture.append(name)
+#             price = float(mach.group("price"))
+#             qty = int(mach.group("qty"))
+#             total_sum += price * qty
+# print(f"Bought furniture:")
+# for elem in bought_furniture:
+#     print(elem)
+# print(f"Total money spend: {total_sum}")
+
 
 
