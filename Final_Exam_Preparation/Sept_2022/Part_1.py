@@ -125,5 +125,3 @@ def get_pianist(number):
 
 num_pieces = int(input())
 get_pianist(num_pieces)
-
-

@@ -70,3 +70,5 @@
 #
 #     else:
 #         print(f"No mirror words!")
+
+# Task 3
