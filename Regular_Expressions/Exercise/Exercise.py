@@ -22,8 +22,20 @@ import re
 
 # Task 3 Find Occurrences of Word in Sentence
 
-text = input()
-pattern = input()
+# text = input()
+# pattern = input()
+#
+# match = re.findall(pattern, text, re.IGNORECASE)
+# print(len(match))
 
-match = re.findall(pattern, text, re.IGNORECASE)
-print(len(match))
+# Task 4 Extract Email
+
+pattern = r"[a-z0-9\-\_\.\,]+@[A-Za-z-]+[a-z\.]*\b"
+
+text = input()
+while text:
+    match = re.findall(pattern, text)
+    if match:
+        print("\n".join(match))
+    text = input()
+
