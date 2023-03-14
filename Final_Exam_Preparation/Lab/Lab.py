@@ -49,3 +49,17 @@
 
 # Task 2 Destination Mapper
 
+import re
+
+pattern = r"(?P<sep>[\=\/])?(?P<dest>[A-Z][]a-z]+)\1"
+text = input()
+destinations = []
+travel_points = 0
+
+matches = re.finditer(pattern, text)
+for match in matches:
+    destinations.append(match.group("dest"))
+    travel_points += len(match.group("dest"))
+print(f"Destinations: {', '.join(destinations)}")
+print(f"Travel Points: {travel_points}")
+
