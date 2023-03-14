@@ -11,12 +11,19 @@ import re
 
 # Task 2 Find Variable Names in Sentences
 
-pattern = r"\b\_[A-Za-z0-9]+\b"
+# pattern = r"\b\_[A-Za-z0-9]+\b"
+# text = input()
+#
+# matches = re.findall(pattern, text)
+# result = []
+# for match in matches:
+#     result.append(match[1:])
+# print(",".join(result),end="")
+
+# Task 3 Find Occurrences of Word in Sentence
+
 text = input()
+pattern = input()
 
-matches = re.findall(pattern, text)
-result = []
-for match in matches:
-    result.append(match[1:])
-print(",".join(result),end="")
-
+match = re.findall(pattern, text, re.IGNORECASE)
+print(len(match))
