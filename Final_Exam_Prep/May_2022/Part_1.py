@@ -56,7 +56,7 @@
 import re
 
 words = {}
-name_pattern = r"\s([:*]{2})([A-Za-z]+)\1"
+name_pattern = r"\s([:*]{2})([A-Z][a-z]+)\1"
 number_pattern = r"\d"
 text = input()
 animals = []
@@ -64,25 +64,25 @@ count = 1
 name_result = re.finditer(name_pattern, text)
 for name in name_result:
     a_name = name.group(0)[1:]
-    print(a_name)
+    animals.append(a_name)
 
 number_result = re.findall(number_pattern, text)
 if number_result:
    count_int = [int(x) for x in number_result]
    for num in count_int:
        count *= num
-print(count)
-# cool_animals = []
-# for animal in animals:
-#     curr_sum = 0
-#     for char in animal:
-#         curr_sum += ord(char)
-#     if curr_sum > count:
-#         cool_animals.append(animal)
-# print(f"Cool threshold: {count}")
-# print(f"{len(animals)} emojis found in the text. The cool ones are:")
-# for anim in cool_animals:
-#     print(f"{anim }")
+
+cool_animals = []
+for animal in animals:
+    curr_sum = 0
+    for char in animal:
+        curr_sum += ord(char)
+    if curr_sum > count:
+        cool_animals.append(animal)
+print(f"Cool threshold: {count}")
+print(f"{len(animals)} emojis found in the text. The cool ones are:")
+for anim in cool_animals:
+    print(f"{anim }")
 
 
 
