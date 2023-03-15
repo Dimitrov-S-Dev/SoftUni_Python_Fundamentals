@@ -52,38 +52,31 @@
 #
 
 # Task 2 Emoji Detector
+import re
 
-# import re
-#
-# words = {}
-# name_pattern = r"\s([:*]{2})([A-Z][a-z]+)\1"
-# number_pattern = r"\d"
-# text = input()
-# animals = []
-# count = 1
-# name_result = re.finditer(name_pattern, text)
-# for name in name_result:
-#     a_name = name.group(0)[1:]
-#     animals.append(a_name)
-#
-# number_result = re.findall(number_pattern, text)
-# if number_result:
-#    count_int = [int(x) for x in number_result]
-#    for num in count_int:
-#        count *= num
-#
-# cool_animals = []
-# for animal in animals:
-#     curr_sum = 0
-#     for char in animal:
-#         curr_sum += ord(char)
-#     if curr_sum > count:
-#         cool_animals.append(animal)
-# print(f"Cool threshold: {count}")
-# print(f"{len(animals)} emojis found in the text. The cool ones are:")
-# for anim in cool_animals:
-#     print(f"{anim }")
+text = input()
+pattern = r'([:]{2}|[*]{2})([A-Z]{1}[a-z]{2,})(\1)'
+matches = re.findall(pattern, text)
 
+threshold = 1
+for char in text:
+    if char.isdigit():
+        threshold *= int(char)
+
+cool_emojis = []
+for emoji in matches:
+    coolnes = 0
+    for char in emoji[1]:
+        coolnes += ord(char)
+
+    if coolnes > threshold:
+        cool_emojis.append(emoji)
+
+print(f'Cool threshold: {threshold}')
+if len(matches) > 0:
+    print(f'{len(matches)} emojis found in the text. The cool ones are:')
+    for emoji in cool_emojis:
+        print(''.join(emoji))
 
 
 
