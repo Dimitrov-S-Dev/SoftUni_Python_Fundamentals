@@ -159,4 +159,3 @@ def get_heroes(number):
 
 n = int(input())
 get_heroes(n)
-
