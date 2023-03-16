@@ -55,30 +55,28 @@
 
 import re
 
-# text = input()
-# pattern = r'([:]{2}|[*]{2})([A-Z]{1}[a-z]{2,})(\1)'
-# matches = re.findall(pattern, text)
-#
-# threshold = 1
-# for char in text:
-#     if char.isdigit():
-#         threshold *= int(char)
-#
-# cool_emojis = []
-# for emoji in matches:
-#     cool = 0
-#     for char in emoji[1]:
-#         cool += ord(char)
-#
-#     if cool > threshold:
-#         cool_emojis.append(emoji)
-#
-# print(f'Cool threshold: {threshold}')
-# if len(matches):
-#     print(f'{len(matches)} emojis found in the text. The cool ones are:')
-#     for emoji in cool_emojis:
-#         print(''.join(emoji))
+pattern = r"(\:{2}|\*{2})([A-Z][a-z]{2,})(\1)"
+text = input()
+threshold = 1
 
+for el in text:
+    if el.isdigit():
+        threshold *= int(el)
 
+matches = re.findall(pattern, text)
 
+cools = []
+for match in matches:
+    curr_sum = 0
+    for element in match[1]:
+        curr_sum += ord(element)
+    if curr_sum > threshold:
+        cools.append("".join(match))
+
+print(f"Cool threshold: {threshold}")
+if matches:
+    print(f"{len(matches)} emojis found in the text. The cool ones are:")
+    print("\n".join(cools))
+
+# Task 3 
 
