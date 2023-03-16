@@ -52,6 +52,7 @@
 #
 
 # Task 2 Emoji Detector
+
 import re
 
 # text = input()
@@ -65,11 +66,11 @@ import re
 #
 # cool_emojis = []
 # for emoji in matches:
-#     coolnes = 0
+#     cool = 0
 #     for char in emoji[1]:
-#         coolnes += ord(char)
+#         cool += ord(char)
 #
-#     if coolnes > threshold:
+#     if cool > threshold:
 #         cool_emojis.append(emoji)
 #
 # print(f'Cool threshold: {threshold}')
