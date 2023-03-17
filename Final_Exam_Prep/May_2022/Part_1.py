@@ -53,30 +53,86 @@
 
 # Task 2 Emoji Detector
 
-import re
+# import re
+#
+# pattern = r"(\:{2}|\*{2})([A-Z][a-z]{2,})(\1)"
+# text = input()
+# threshold = 1
+#
+# for el in text:
+#     if el.isdigit():
+#         threshold *= int(el)
+#
+# matches = re.findall(pattern, text)
+#
+# cools = []
+# for match in matches:
+#     curr_sum = 0
+#     for element in match[1]:
+#         curr_sum += ord(element)
+#     if curr_sum > threshold:
+#         cools.append("".join(match))
+#
+# print(f"Cool threshold: {threshold}")
+# if matches:
+#     print(f"{len(matches)} emojis found in the text. The cool ones are:")
+#     print("\n".join(cools))
 
-pattern = r"(\:{2}|\*{2})([A-Z][a-z]{2,})(\1)"
-text = input()
-threshold = 1
+# Task 3 Plant Discovery
 
-for el in text:
-    if el.isdigit():
-        threshold *= int(el)
 
-matches = re.findall(pattern, text)
+def get_store(num):
+    plant_dict = {}
+    for _ in range(num):
+        plant, rarity = input().split("<->")
+        rarity = int(rarity)
+        if plant not in plant_dict.keys():
+            plant_dict[plant] = {"rarity": 0,"rating":[]}
+        plant_dict[plant]["rarity"] += rarity
+    return plant_dict
 
-cools = []
-for match in matches:
-    curr_sum = 0
-    for element in match[1]:
-        curr_sum += ord(element)
-    if curr_sum > threshold:
-        cools.append("".join(match))
+def get_while(dict):
+    while True:
+        command = input()
+        if command == "Exhibition":
+            break
+        info = command.split(":")
+        action = info[0]
+        data = info[1].strip().split(" - ")
+        plant = data[0]
 
-print(f"Cool threshold: {threshold}")
-if matches:
-    print(f"{len(matches)} emojis found in the text. The cool ones are:")
-    print("\n".join(cools))
+        if plant in dict.keys():
+            if action == "Rate":
+                rating = int(data[1])
+                dict[plant]["rating"].append(rating)
 
-# Task 3 
+            elif action == "Update":
+                new_rarity = int(data[1])
+                dict[plant]["rarity"] = new_rarity
+
+            elif action == "Reset":
+                dict[plant]["rating"] = []
+        else:
+            print(f"error")
+
+    return dict
+
+def get_print(dict):
+    print(f"Plants for the exhibition:")
+    for element in dict.keys():
+        if len(dict[element]["rating"]) > 0 and sum(dict[element]["rating"]) > 0:
+            avr_rating = sum(dict[element]["rating"]) / len(dict[element]["rating"])
+        else:
+            avr_rating = 0
+        print(f"- {element}; Rarity: {dict[element]['rarity']}; Rating: {avr_rating:.2f}")
+def get_plant_discovery(number):
+    plant_dict = get_store(number)
+    plant_dict = get_while(plant_dict)
+    plant_dict = get_print(plant_dict)
+
+
+n = int(input())
+get_plant_discovery(n)
+
+
 
