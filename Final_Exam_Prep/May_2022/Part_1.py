@@ -133,6 +133,3 @@ def get_plant_discovery(number):
 
 n = int(input())
 get_plant_discovery(n)
-
-
-
