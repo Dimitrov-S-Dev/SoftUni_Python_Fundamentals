@@ -46,9 +46,9 @@ while True:
     command = input()
     if command == "Purchase":
         break
-    maches = re.finditer(pattern, command)
-    if maches:
-        for mach in maches:
+    matches = re.finditer(pattern, command)
+    if matches:
+        for mach in matches:
             name = mach.group("name")
             bought_furniture.append(name)
             price = float(mach.group("price"))
