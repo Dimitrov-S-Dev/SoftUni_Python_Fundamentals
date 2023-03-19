@@ -41,3 +41,23 @@
 #
 # text = input()
 # get_world_tour(text)
+
+# Task 2 Ad Astra
+
+import re
+
+pattern = r"\#([A-Z a-z]+)\#(\d{2}\/\d{2}\/\d{2})\#(\d+)\#|\|([A-Z a-z]+)\|(\d{2}\/\d{2}\/\d{2})\|(\d+)\|"
+text = input()
+
+calories = 0
+for_print = []
+matches = re.findall(pattern, text)
+for match in matches:
+    curr_match = [elem for elem in match if elem != ""]
+    calories += int(curr_match[2])
+    for_print.append(curr_match)
+
+days = calories // 2000
+print(f"You have food to last you for: {days} days!")
+for elem in for_print:
+    print(f"Item: {elem[0]}, Best before: {elem[1]}, Nutrition: {elem[2]}")
