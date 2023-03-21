@@ -14,7 +14,7 @@ def get_while(message):
         elif action == "Reverse":
             substring = info[1]
             if substring in message:
-                message = message.strip(substring)
+                message = message.replace(substring, "", 1)
                 message += substring[::-1]
                 print(message)
             else:
@@ -39,4 +39,3 @@ def get_secret_chat(message):
 
 data = input()
 get_secret_chat(data)
-
