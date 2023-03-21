@@ -48,11 +48,11 @@ while True:
         break
     matches = re.finditer(pattern, command)
     if matches:
-        for mach in matches:
-            name = mach.group("name")
+        for match in matches:
+            name = match.group("name")
             bought_furniture.append(name)
-            price = float(mach.group("price"))
-            qty = int(mach.group("qty"))
+            price = float(match.group("price"))
+            qty = int(match.group("qty"))
             total_sum += price * qty
 print(f"Bought furniture:")
 for elem in bought_furniture:
