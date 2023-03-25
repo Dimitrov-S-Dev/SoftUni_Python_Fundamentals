@@ -66,6 +66,7 @@ def get_print(heroes_dict):
         print(f"HP: {heroes_dict[hero]['HP']}")
         print(f"MP: {heroes_dict[hero]['MP']}")
 
+
 def get_heroes(number):
     heroes_dict = get_info(number)
     heroes_dict = get_while(heroes_dict)
