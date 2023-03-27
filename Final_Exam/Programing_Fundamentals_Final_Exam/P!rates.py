@@ -44,7 +44,6 @@ def get_while(pirates_dict):
                 pirates_dict[town]["gold"] += gold_added
                 print(f"{gold_added} gold added to the city treasury. {town} now has {pirates_dict[town]['gold']} gold.")
 
-
     return pirates_dict
 
 
