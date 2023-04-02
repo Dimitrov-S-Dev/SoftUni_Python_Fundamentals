@@ -30,8 +30,8 @@ def get_dictionary(number):
                     dictionary_dict[word].append(definitions)
         elif num == 1:
             words = input().split(" | ")
-            for w in words:
-                test_words.append(w)
+            for word in words:
+                test_words.append(word)
 
         elif num == 2:
             command = input()
