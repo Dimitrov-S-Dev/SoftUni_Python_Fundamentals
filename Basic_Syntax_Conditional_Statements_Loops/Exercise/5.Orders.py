@@ -6,7 +6,7 @@ for _ in range(number_of_orders):
     days = int(input())
     capsules = int(input())
 
-    if price_per_capsule < 0.01 or price_per_capsule > 100.00:
+    if price_per_capsule < 0.01 or price_per_capsule > 100:
         continue
     if days < 1 or days > 31:
         continue
