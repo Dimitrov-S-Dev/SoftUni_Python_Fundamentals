@@ -12,8 +12,10 @@ elif number > 0:
         result = "positive"
 else:
     if abs(number) > 1_000_000:
-        print("large negative")
+        result = "large negative"
     elif abs(number) < 1:
-        print("small negative")
+        result = "small negative"
     else:
-        print("negative")
+        result = "negative"
+
+print(result)
