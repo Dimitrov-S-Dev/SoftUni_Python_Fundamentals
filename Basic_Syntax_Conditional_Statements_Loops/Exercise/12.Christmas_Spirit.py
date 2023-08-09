@@ -4,7 +4,6 @@ days = int(input())
 budget = 0
 totalSpirit = 0
 
-factor = 1
 for day in range(1, days + 1):
     if day % 11 == 0:
         quantity += 2

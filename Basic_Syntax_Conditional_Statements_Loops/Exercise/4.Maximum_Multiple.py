@@ -1,7 +1,7 @@
 divisor = int(input())
 boundary = int(input())
 
-for num in range(boundary, 0, -1):
-    if num % divisor == 0:
-        print(num)
+for number in range(boundary, 0, -1):
+    if number % divisor == 0:
+        print(number)
         break

@@ -17,5 +17,4 @@ while True:
             break
         colored_eggs -= number_of_loaves - 2
 
-
 print(f"You made {number_of_loaves} loaves of Easter bread! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")

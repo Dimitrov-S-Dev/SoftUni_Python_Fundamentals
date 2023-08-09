@@ -2,6 +2,7 @@ number_of_coffees = 0
 
 while True:
     command = input()
+
     if command == "END":
         break
 

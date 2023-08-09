@@ -1,5 +1,4 @@
 age = int(input())
-
 result = f"drink "
 
 if age <= 14:

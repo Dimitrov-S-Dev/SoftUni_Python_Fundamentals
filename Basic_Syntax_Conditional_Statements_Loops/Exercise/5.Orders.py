@@ -1,6 +1,6 @@
 number_of_orders = int(input())
 
-total_price = 0
+t_price = 0
 for _ in range(number_of_orders):
     price_per_capsule = float(input())
     days = int(input())
@@ -13,7 +13,7 @@ for _ in range(number_of_orders):
     if capsules < 1 or capsules > 2000:
         continue
     coffe_price = price_per_capsule * days * capsules
-    total_price += coffe_price
+    t_price += coffe_price
     print(f"The price for the coffee is: ${coffe_price:.2f}")
 
-print(f"Total: ${total_price:.2f}")
+print(f"Total: ${t_price:.2f}")

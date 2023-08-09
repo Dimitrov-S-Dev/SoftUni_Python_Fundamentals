@@ -2,6 +2,7 @@ flag = True
 
 while True:
     name = input()
+
     if name == "Welcome!":
         break
     if name == "Voldemort":

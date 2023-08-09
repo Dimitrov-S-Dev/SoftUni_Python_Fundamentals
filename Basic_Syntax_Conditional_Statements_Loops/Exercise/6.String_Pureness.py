@@ -1,6 +1,6 @@
 n = int(input())
-
 characters = ",._"
+
 for _ in range(n):
     curr_text = input()
     for char in curr_text:
