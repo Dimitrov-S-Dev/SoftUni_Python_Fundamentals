@@ -1,8 +1,8 @@
-persons = int(input())
-number_of_people = int(input())
+people = int(input())
+capacity = int(input())
 count = 0
-if number_of_people != 0:
-    for number in range(0, persons, number_of_people):
+if capacity != 0:
+    for number in range(0, people, capacity):
         count += 1
 
 print(count)
