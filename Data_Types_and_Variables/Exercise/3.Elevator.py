@@ -1,8 +1,14 @@
+from math import ceil
 people = int(input())
 capacity = int(input())
-count = 0
-if capacity != 0:
-    for number in range(0, people, capacity):
-        count += 1
+result = ceil(people / capacity)
+print(result)
 
-print(count)
+# people = int(input())
+# capacity = int(input())
+# count = 0
+# if capacity != 0:
+#     for number in range(0, people, capacity):
+#         count += 1
+#
+# print(count)
