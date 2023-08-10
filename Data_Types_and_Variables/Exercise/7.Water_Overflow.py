@@ -5,7 +5,7 @@ n = int(input())
 
 for _ in range(n):
     curr_liters = int(input())
-    if curr_liters > WATER_TANK - water_filled:
+    if curr_liters + water_filled > WATER_TANK:
         print('Insufficient capacity!')
         continue
     water_filled += curr_liters
