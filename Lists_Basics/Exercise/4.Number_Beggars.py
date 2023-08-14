@@ -1,11 +1,11 @@
-amounts = [int(x) for x in input().split(', ')]
-beggars = int(input())
+moneys = list(map(int, input().split(', ')))
+beggars_count = int(input())
 result = []
 
-for beggar in range(beggars):
-    curr_amount = 0
-    for index in range(beggar, len(amounts), beggars):
-        curr_amount += amounts[index]
-    result.append(curr_amount)
+for beggar in range(beggars_count):
+    beggar_amount = 0
+    for idx in range(beggar, len(moneys), beggars_count):
+        beggar_amount += moneys[idx]
+    result.append(beggar_amount)
 
 print(result)
